@@ -1,2 +1,3 @@
-user-agent: *
-sitemap: https://sveltekit-starter-one.vercel.app/
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:

@@ -1,13 +1,13 @@
-<script>
+<script lang="ts">
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+	console.log(data);
+</script>
 
 <section>
 	<h1>
@@ -17,15 +17,12 @@
 				<img src={welcome_fallback} alt="Welcome" />
 			</picture>
 		</span>
-
-		to your new<br />SvelteKit app
 	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+	<ul>
+		{#each data.spells.results as spell}
+			<li>{spell.name}</li>
+		{/each}
+	</ul>
 </section>
 
 <style>

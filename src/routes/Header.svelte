@@ -1,11 +1,11 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/logo-removebg-preview.png';
+	import logo from '$lib/images/logo.png';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
-	<div class="corner">
+	<div class="corner"> 
 		<a href="/">
 			<img src={logo} alt="SvelteKit" />
 		</a>
@@ -48,8 +48,8 @@
 	}
 
 	.corner {
-		width: 3em;
-		height: 3em;
+		width: 4em;
+		height: 4em;
 	}
 
 	.corner a {

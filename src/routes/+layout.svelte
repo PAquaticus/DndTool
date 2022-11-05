@@ -4,50 +4,52 @@
 </script>
 
 <div class="app">
-	<Header />
-
+	<div class="header">
+		<Header />
+	</div>
 	<main>
 		<slot />
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>Always remember: Crying is a free action.</p>
 	</footer>
 </div>
 
 <style>
 	.app {
-		display: flex;
-		flex-direction: column;
 		min-height: 100vh;
+		max-height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 4em 1fr 2.5em;
+		gap: 0px 0px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			'header header header'
+			'main main main'
+			'footer footer footer';
+	}
+	.header {
+		grid-area: header;
 	}
 
 	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
+		grid-area: main;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
+		max-width: 100%;
+		height: 100%;
+		overflow: auto;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
 
 	footer {
+		width: 100%;
+		grid-area: footer;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
 	}
 </style>

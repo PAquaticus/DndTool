@@ -13,7 +13,8 @@
  */
 
 import * as url from "url";
-import * as isomorphicFetch from "isomorphic-fetch";
+import {parse} from "url"
+const isomorphicFetch = fetch;
 import { Configuration } from "./configuration";
 
 const BASE_PATH = "https://www.dnd5eapi.co".replace(/\/+$/, "");
@@ -5392,8 +5393,8 @@ export const SpellsApiFetchParamCreator = function (configuration?: Configuratio
          * @throws {RequiredError}
          */
         apiSpellsGet(level?: Array<number>, school?: Array<string>, options: any = {}): FetchArgs {
-            const localVarPath = `/api/spells`;
-            const localVarUrlObj = url.parse(localVarPath, true);
+            const localVarPath = `/api/spells`; 
+            const localVarUrlObj = parse(localVarPath, true);
             const localVarRequestOptions = Object.assign({ method: 'GET' }, options);
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;

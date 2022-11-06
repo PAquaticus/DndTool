@@ -36,3 +36,19 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+
+# DndTool
+
+## Technical stuff
+ - [ ] Integrate [Sekelton](https://www.skeleton.dev/) with the frontend
+ - [ ] Swagger codegen macht aus `casting_time` -> `castingTime`. Das muss weg
+ - [ ] Deployment
+ - [ ] Database integration
+ - [ ] Prisma
+
+## Feature stuff
+ - [ ] Encounter builder
+ - [ ] Image maker
+ - [ ] Search reddit thingy

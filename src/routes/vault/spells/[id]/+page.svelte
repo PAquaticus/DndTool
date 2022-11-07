@@ -3,16 +3,18 @@
 
 	export let data: PageData;
 	const { spell } = data;
-  console.log(spell);
-  
 </script>
 
 <section>
 	<h1>Spell Editor</h1>
+
 	<div class="editor-row">
-		<div>name</div>
-		<div>{spell.name}</div>
+		<label for="name">
+			<span>Name</span>
+			<input class="w-28" type="text" id="name" bind:value={spell.name} minlength="2" required />
+		</label>
 	</div>
+
 	<div class="editor-row">
 		<div>casting time</div>
 		<div>{spell.castingTime}</div>

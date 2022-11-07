@@ -1,56 +1,33 @@
 <script>
 	import '../app.postcss';
-	import Header from './Header.svelte';
-	import './styles.css';
+	import '../theme.postcss'
+	import '@brainandbones/skeleton/styles/all.css';
+	import { AppShell, AppBar } from '@brainandbones/skeleton';
+	import logo from '$lib/images/logo.png';
 </script>
 
-<div class="app">
-	<div class="header">
-		<header />
-	</div>
-	<main>
-		<slot />
-	</main>
+<AppShell>
+	<!-- Header -->
+	<svelte:fragment slot="header">
+		<AppBar class="h-14 bg-gradient-to-r from-blue-500 to-blue-400">
+			<svelte:fragment slot="lead">
+				<div class="w-12 h-12">
+					<a class="w-12 h-12" href="/">
+						<img class="w-12 h-12" src={logo} alt="SvelteKit" />
+					</a>
+				</div>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<div>abd</div>
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
 
-	<footer>
-		<p>Always remember: Crying is a free action.</p>
-	</footer>
-</div>
+	<slot />
 
-<style>
-	.app {
-		min-height: 100vh;
-		max-height: 100vh;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 4em 1fr 2.5em;
-		gap: 0px 0px;
-		grid-auto-flow: row;
-		grid-template-areas:
-			'header header header'
-			'main main main'
-			'footer footer footer';
-	}
-	.header {
-		grid-area: header;
-	}
-
-	main {
-		grid-area: main;
-		padding: 1rem;
-		width: 100%;
-		max-width: 100%;
-		height: 100%;
-		overflow: auto;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		width: 100%;
-		grid-area: footer;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-</style>
+	<svelte:fragment slot="footer">
+		<div class="w-full flex justify-center">
+			<p>Always remember: Crying is a free action.</p>
+		</div>
+	</svelte:fragment>
+</AppShell>

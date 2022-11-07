@@ -43,6 +43,7 @@ You can preview the production build with `npm run preview`.
 
 ## Technical stuff
  - [ ] Integrate [Sekelton](https://www.skeleton.dev/) with the frontend
+   - [ ] Tailwind plusing here look good: https://www.skeleton.dev/guides/tailwind
  - [ ] Swagger codegen macht aus `casting_time` -> `castingTime`. Das muss weg
  - [ ] Deployment
  - [ ] Database integration

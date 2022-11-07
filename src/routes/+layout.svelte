@@ -1,15 +1,15 @@
 <script>
 	import '../app.postcss';
-	import '../theme.postcss'
+	import '../theme.postcss';
 	import '@brainandbones/skeleton/styles/all.css';
 	import { AppShell, AppBar } from '@brainandbones/skeleton';
 	import logo from '$lib/images/logo.png';
 </script>
 
-<AppShell>
+<AppShell class="bg-surface-50">
 	<!-- Header -->
 	<svelte:fragment slot="header">
-		<AppBar class="h-14 bg-gradient-to-r from-blue-500 to-blue-400">
+		<AppBar class="h-14 bg-accent-900">
 			<svelte:fragment slot="lead">
 				<div class="w-12 h-12">
 					<a class="w-12 h-12" href="/">

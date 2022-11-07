@@ -7,7 +7,7 @@
 </script>
 
 <section class="px-16 py-8 flex flex-row justify-center">
-	<div>
+	<div >
 		<h1>Spell Editor</h1>
 		<div class="flex flex-row">
 			<div class="flex flex-col mr-4">
@@ -15,7 +15,7 @@
 					<input type="text" id="Name" bind:value={spell.name} minlength="2" required />
 				</EditorRowInput>
 
-				<EditorRowInput name="description">
+				<EditorRowInput name="Description">
 					<textarea class="h-64" id="description" bind:value={spell.desc} minlength="2" required />
 				</EditorRowInput>
 			</div>
@@ -46,10 +46,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	.editor-row {
-		margin-top: 2rem;
-		width: 40rem;
-	}
-</style>

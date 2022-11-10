@@ -1,51 +1,45 @@
 <script lang="ts">
+	import { Monster } from '$lib/services/dnd5eApi';
 	import type { PageData } from './$types';
 	export let data: PageData;
+
+	type ListEntry = {
+		name: string;
+		type: string;
+		url: string;
+	};
+
+	const rows: ListEntry[] =
+		data.spells.results
+			?.map((spell) => ({
+				name: spell.name ?? '',
+				type: 'spell',
+				url: `spells/${spell.index}`
+			}))
+			.concat(
+				data.monsters.results?.map((monster) => ({
+					name: monster.name ?? '',
+					type: 'monster',
+					url: 'todo'
+				})) ?? []
+			) ?? [];
 </script>
 
-<section>
-	<div class="left-sidebar">
-		{#each data?.spells.results ?? [] as spell}
-			<span class="list-entry">
-				<a href={`/vault/spells/${spell.index}`}> 
-					{spell.name}
-				</a>
-			</span>
+<section class="px-24">
+	<div class="flex flex-col bg-surface-100">
+		{#each rows ?? [] as entry}
+			<div class="flex flex-row p-2 hover:bg-surface-200">
+				<span class="mr-4">
+					<a href={`/vault/${entry.url}`}>
+						{entry.name}
+					</a>
+				</span>
+
+				<span class="">
+					{entry.type}
+				</span>
+			</div>
 		{/each}
 	</div>
 	<div class="editor" />
 </section>
-
-<style>
-	section {
-		height: 100%;
-		display: grid;
-		grid-template-columns: 1fr 2.5fr;
-		grid-template-rows: 1fr;
-		gap: 0px 0px;
-		grid-auto-flow: row;
-		grid-template-areas: 'list editor';
-	}
-
-	.editor {
-		grid-area: editor;
-	}
-
-	.left-sidebar {
-		grid-area: list;
-		height: 100%;
-		overflow-y: scroll;
-		display: flex;
-		flex-direction: column;
-		background-color: aliceblue;
-	}
-
-	.list-entry {
-		padding: 0.4rem;
-	}
-
-	.list-entry:hover {
-		background-color: white;
-	}
-
-</style> 

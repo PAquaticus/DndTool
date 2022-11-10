@@ -3,11 +3,16 @@
 export const prerender = true;
 
 import type { PageLoad } from './$types';
-import * as dndApi from "$lib/services/dnd5eApi/api"
+import * as dndApi from '$lib/services/dnd5eApi/api';
 
 export const load: PageLoad = async ({ params }) => {
-  const instance =  new dndApi.SpellsApi({})  
-  return {
-    spells: await instance.apiSpellsGet()
-  };
-}
+	const SpellsApi = new dndApi.SpellsApi({});
+	const MonstersApi = new dndApi.MonstersApi({});
+	const EquipmentApi = new dndApi.EquipmentApi({});
+	// TODO heroes sind hier nicht drin
+
+	return {
+		spells: await SpellsApi.apiSpellsGet(),
+		monsters: await MonstersApi.apiMonstersGet()
+	};
+};

@@ -5,7 +5,11 @@ const config = {
 	],
 
 	theme: {
-		extend: {}
+		extend: {
+			width: {
+				"160": "40rem"
+			}
+		} 
 	},
 
 	plugins: [

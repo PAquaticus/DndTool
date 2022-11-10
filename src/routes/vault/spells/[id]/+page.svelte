@@ -7,7 +7,7 @@
 </script>
 
 <section class="px-16 py-8 flex flex-row justify-center">
-	<div >
+	<div>
 		<h1>Spell Editor</h1>
 		<div class="flex flex-row">
 			<div class="flex flex-col mr-4">

@@ -9,7 +9,6 @@ export const load: PageLoad = async ({ params }) => {
 	const SpellsApi = new dndApi.SpellsApi({});
 	const MonstersApi = new dndApi.MonstersApi({});
 	const EquipmentApi = new dndApi.EquipmentApi({});
-	// TODO heroes sind hier nicht drin
 
 	return {
 		spells: await SpellsApi.apiSpellsGet(),

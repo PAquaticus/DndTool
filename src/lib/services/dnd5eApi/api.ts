@@ -5130,7 +5130,7 @@ export const GameMechanicsApiFetchParamCreator = function (configuration?: Confi
 		 * @throws {RequiredError}
 		 */
 		apiDamageTypesGet(options: any = {}): FetchArgs {
-			const localVarPath = `/api/damage-types`;
+			const localVarPath = `/api/damage-types`; 
 			const localVarUrlObj = url.parse(localVarPath, true);
 			const localVarRequestOptions = Object.assign({ method: 'GET' }, options);
 			const localVarHeaderParameter = {} as any;
@@ -5274,7 +5274,7 @@ export const GameMechanicsApiFp = function (configuration?: Configuration) {
 		 */
 		apiDamageTypesGet(
 			options?: any
-		): (fetch?: FetchAPI, basePath?: string) => Promise<DamageType[]> {
+		): (fetch?: FetchAPI, basePath?: string) => Promise<APIReferenceList> {
 			const localVarFetchArgs =
 				GameMechanicsApiFetchParamCreator(configuration).apiDamageTypesGet(options);
 			return (fetch: FetchAPI = isomorphicFetch, basePath: string = BASE_PATH) => {

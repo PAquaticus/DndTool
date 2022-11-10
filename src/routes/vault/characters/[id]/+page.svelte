@@ -43,16 +43,18 @@
 						value={character.armorClass}
 					/>
 					<TextInput
-						tailwindClass="w-16 mr-2"
+						tailwindClass="w-16 mr-4"
 						id="initiative"
 						label="Initiative"
 						placeholder="1"
 						value={character.armorClass}
 					/>
-					<CheckboxInput
-						id="initiativeAdvantage"
-						label="Advantage"
-						value={character.initiativeAdvantage}
+					<TextInput
+						tailwindClass="w-16 mr-2"
+						id="speed"
+						label="Speed"
+						placeholder="30"
+						value={character.speed}
 					/>
 				</FormRow>
 
@@ -90,9 +92,7 @@
 
 				<DamageTypeTable value={''} />
 
-				<TextInput id="speed" label="Speed" value={character.speed} />
-
-				skills "dmg cond immunities" action bonus action reaction legendary action mythic action
+				"dmg cond immunities" action bonus action reaction legendary action mythic action
 
 				<EditorRowInput name="Source">
 					<input type="text" id="Name" bind:value={character.name} minlength="2" required />

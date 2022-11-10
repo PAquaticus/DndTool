@@ -15,27 +15,18 @@
 
 <table class="bg-slate-200  rounded-lg my-4">
 	<tr>
-		<th />
-		{#each damageTypes?.results ?? [] as damageType}
-			<th class="w-24 text-sm font">{damageType.name}</th>
-		{/each}
+		<th class="w-40 px-4">Type</th>
+		<th class="w-40">Vulnerability</th>
+		<th class="w-40">Resistance</th>
+		<th class="w-40">Immunity</th>
 	</tr>
-	<tr>
-		<td>Vulnerabilities</td>
-		{#each damageTypes?.results ?? [] as damageType}
+
+	{#each damageTypes?.results ?? [] as damageType}
+		<tr>
+			<td class="w-16 px-4">{damageType.name}</td>
 			<td class="text-center bg-slate-200 py-2"><input type="checkbox" /></td>
-		{/each}
-	</tr>
-	<tr
-		><td>Resistances</td>
-		{#each damageTypes?.results ?? [] as damageType}
 			<td class="text-center bg-slate-200 py-2"><input type="checkbox" /></td>
-		{/each}
-	</tr>
-	<tr
-		><td>Immunities</td>
-		{#each damageTypes?.results ?? [] as damageType}
 			<td class="text-center bg-slate-200 py-2"><input type="checkbox" /></td>
-		{/each}
-	</tr>
+		</tr>
+	{/each}
 </table>

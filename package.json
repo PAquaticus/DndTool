@@ -14,6 +14,7 @@
 	"devDependencies": {
 		"@brainandbones/skeleton": "^0.67.5",
 		"@fontsource/fira-mono": "^4.5.0",
+		"@iconify/svelte": "^3.0.0",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "1.25.0",
 		"@sveltejs/adapter-auto": "next",

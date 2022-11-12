@@ -1,11 +1,10 @@
 <script lang="ts">
   import { GameMechanicsApi, type APIReferenceList, type DamageType } from '$lib/services/dnd5eApi';
-  import { DataTable } from '@brainandbones/skeleton';
+  import type { DamageTableRowentry } from '$lib/types/DamageTableRowEntry';
   import Icon from '@iconify/svelte';
   import { onMount } from 'svelte';
-  import { DamageEffects } from './damageEffects';
 
-  export let value: string;
+  export let entries: DamageTableRowentry[] = [];
   let damageTypeReferenceList: undefined | APIReferenceList = undefined;
 
   onMount(async () => {
@@ -13,18 +12,9 @@
     damageTypeReferenceList = await gameMechanicsApi.apiDamageTypesGet();
   });
 
-  const damageTypes: DataTable['$$prop_def'] = {
-    search: undefined,
-    sort: 'position',
-    headings: ['', 'Damage Type', 'Effect'],
-    source: [{ remove: '<button class="btn">remove</button>', type: 'Acid', effect: 'reistance' }]
+  $: onClick = (index: number) => {
+    entries = entries.slice(0, index).concat(entries.slice(index + 1));
   };
-
-  let newTypeValue: string | undefined = undefined;
-  let newTypeEffect: string | undefined = undefined;
-
-  const onSort = () => {};
-  const onSelect = () => {};
 </script>
 
 <div class="w-full py-2 px-4">
@@ -34,12 +24,16 @@
       <th align="left" class="w-64 data-column">Damage Type</th>
       <th align="left" class="w-24" />
     </tr>
-    <tr>
-      <td class="w-64 td-1">Effect</td>
-      <td class="w-64 td-1">Damage Type</td>
-      <td class="w-16 td-1 text-center"
-        ><button><Icon class="text-xl" icon="mdi:trash" /> </button></td>
-    </tr>
+    {#each entries as entry, idx}
+      <tr>
+        <td class="w-64 td-1">{entry.damageEffect.toLocaleLowerCase()}</td>
+        <td class="w-64 td-1">{entry.damageType.toLocaleLowerCase()}</td>
+        <td class="w-16 td-1 text-center"
+          ><button on:click={() => onClick(idx)}
+            ><Icon class="text-xl" icon="mdi:trash" />
+          </button></td>
+      </tr>
+    {/each}
   </table>
 </div>
 
@@ -59,6 +53,10 @@
     padding-left: 2rem;
     padding-right: 1rem;
     border-bottom: 1px rgb(var(--color-surface-300)) solid;
+  }
+
+  td::first-letter {
+    text-transform: capitalize;
   }
 
   .td-1 {

@@ -1,9 +1,9 @@
 <script lang="ts">
-  import DamageTypeTable from '$lib/components/domainSpecificInputComponents/DamageTypeTable.svelte';
   import TextInput from '$lib/components/genericInputComponents/TextInput.svelte';
   import FormRow from '$lib/components/layout/FormRow.svelte';
   import EditorRowInput from '../../components/EditorRowInput.svelte';
   import AbilityTable from '$lib/components/domainSpecificInputComponents/AbilityTable.svelte';
+  import DamageTypeRow from '../components/DamageTypeRow.svelte';
 
   const character: any = {};
 
@@ -60,7 +60,7 @@
         </div>
 
         <h2>Damage Type Effects</h2>
-        <DamageTypeTable value={''} />
+        <DamageTypeRow {formRowTailwindClass} />
 
         <h2>Actions</h2>
 

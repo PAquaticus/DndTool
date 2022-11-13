@@ -4,8 +4,8 @@
   import EditorRowInput from '../../components/EditorRowInput.svelte';
   import AbilityTable from '$lib/components/domainSpecificInputComponents/AbilityTable.svelte';
   import DamageTypeRow from '../components/DamageTypeRow.svelte';
-  import FormItem from '$lib/components/genericInputComponents/FormItem.svelte';
   import DiceAverageDisplay from '$lib/components/domainSpecificInputComponents/DiceAverageDisplay.svelte';
+  import SpellSelector from '$lib/components/domainSpecificInputComponents/SpellSelector.svelte';
 
   const character: any = {};
 
@@ -77,7 +77,11 @@
         table
 
         <h2>Spells</h2>
-        Spells
+        <SpellSelector
+          id="spellSelect"
+          label="Spell"
+          placeholder="Wish"
+          bind:value={character.spell} />
 
         <EditorRowInput name="Source">
           <input type="text" id="Name" bind:value={character.name} minlength="2" required />

@@ -2,7 +2,6 @@
   import FormItem from '../genericInputComponents/FormItem.svelte';
   import { DamageEffects } from './damageEffects';
   export let value: string | undefined;
-  $: console.log(value);
 
   export let id: string;
   export let label: string;

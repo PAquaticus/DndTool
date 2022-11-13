@@ -1,25 +1,33 @@
 <script lang="ts">
-  import type { DamageTableRowentry } from '$lib/types/DamageTableRowEntry';
+  type T = $$Generic;
   import Icon from '@iconify/svelte';
 
-  export let entries: DamageTableRowentry[] = [];
+  export let data: T[];
+  export let columns: {
+    headerName: string;
+    tailwindClass: string;
+    valueFormatter: (data: T) => string;
+  }[];
 
   $: onClick = (index: number) => {
-    entries = entries.slice(0, index).concat(entries.slice(index + 1));
+    data = data.slice(0, index).concat(data.slice(index + 1));
   };
 </script>
 
 <div class="w-full ">
   <table class="w-full border-solid border-black ">
     <tr>
-      <th align="left" class="w-2/5 data-column">Effect</th>
-      <th align="left" class="w-2/5 data-column">Damage Type</th>
+      {#each columns as col}
+        <th align="left" class={col.tailwindClass}>{col.headerName}</th>
+      {/each}
       <th align="left" class="w-1/5" />
     </tr>
-    {#each entries as entry, idx}
+    {#each data as entry, idx}
       <tr>
-        <td class="w-2/5 td-1">{entry.damageEffect.toLocaleLowerCase()}</td>
-        <td class="w-2/5 td-1">{entry.damageType.toLocaleLowerCase()}</td>
+        {#each columns as col}
+          <td class={col.tailwindClass}>{col.valueFormatter(entry)}</td>
+        {/each}
+
         <td class="w-1/5 td-1 text-center"
           ><button on:click={() => onClick(idx)}
             ><Icon class="text-xl" icon="mdi:trash" />

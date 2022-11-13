@@ -26,21 +26,27 @@
 
 <FormRow tailwindClass={formRowTailwindClass}>
   <DamageEffectSelectInput
-    tailwindClass="w-64 ml-4 mr-4"
+    tailwindClass="w-2/5 mr-4"
     id="damageEffect"
     label="Damage Effect"
     placeholder="Resistance"
     bind:value={newDamageEffect} />
 
   <DamageTypeSelectInput
-    tailwindClass="w-64 ml-4 mr-4"
+    tailwindClass="w-2/5 mr-4"
     id="damageType"
     label="Damage Type"
     placeholder="Acid"
     bind:value={newDamageType} />
-  <div class="pt-8">
+  <div class="addDamageTypeRowButton">
     <button on:click={onClick}><Icon class="text-xl" icon="ic:baseline-plus" /> </button>
   </div>
 </FormRow>
 
 <DamageTypeTable bind:entries />
+
+<style>
+  .addDamageTypeRowButton {
+    padding-top: 2.25rem;
+  }
+</style>

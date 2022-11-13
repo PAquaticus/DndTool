@@ -4,6 +4,8 @@
   import EditorRowInput from '../../components/EditorRowInput.svelte';
   import AbilityTable from '$lib/components/domainSpecificInputComponents/AbilityTable.svelte';
   import DamageTypeRow from '../components/DamageTypeRow.svelte';
+  import FormItem from '$lib/components/genericInputComponents/FormItem.svelte';
+  import DiceAverageDisplay from '$lib/components/domainSpecificInputComponents/DiceAverageDisplay.svelte';
 
   const character: any = {};
 
@@ -28,11 +30,17 @@
 
         <FormRow tailwindClass={formRowTailwindClass}>
           <TextInput
-            tailwindClass="w-32 mr-4"
+            tailwindClass="w-32"
             id="hitDice"
-            label="Hit Dice"
-            placeholder="1d12"
-            value={character.hitDiceQuantity} />
+            label="Hit Point Roll"
+            placeholder="1d12 + 20"
+            bind:value={character.hitDiceQuantity} />
+
+          <DiceAverageDisplay
+            id="hitPointAvg"
+            label="Average"
+            tailwindClass="w-16 mr-4"
+            diceInput={character.hitDiceQuantity} />
 
           <TextInput
             tailwindClass="w-16 mr-4"
@@ -61,6 +69,8 @@
 
         <h2>Damage Type Effects</h2>
         <DamageTypeRow {formRowTailwindClass} />
+
+        <h2>Special Abilities</h2>
 
         <h2>Actions</h2>
 

@@ -17,18 +17,18 @@
   };
 </script>
 
-<div class="w-full py-2 px-4">
-  <table class="border-solid border-black ">
+<div class="w-full ">
+  <table class="w-full border-solid border-black ">
     <tr>
-      <th align="left" class="w-64 data-column">Effect</th>
-      <th align="left" class="w-64 data-column">Damage Type</th>
-      <th align="left" class="w-24" />
+      <th align="left" class="w-2/5 data-column">Effect</th>
+      <th align="left" class="w-2/5 data-column">Damage Type</th>
+      <th align="left" class="w-1/5" />
     </tr>
     {#each entries as entry, idx}
       <tr>
-        <td class="w-64 td-1">{entry.damageEffect.toLocaleLowerCase()}</td>
-        <td class="w-64 td-1">{entry.damageType.toLocaleLowerCase()}</td>
-        <td class="w-16 td-1 text-center"
+        <td class="w-2/5 td-1">{entry.damageEffect.toLocaleLowerCase()}</td>
+        <td class="w-2/5 td-1">{entry.damageType.toLocaleLowerCase()}</td>
+        <td class="w-1/5 td-1 text-center"
           ><button on:click={() => onClick(idx)}
             ><Icon class="text-xl" icon="mdi:trash" />
           </button></td>

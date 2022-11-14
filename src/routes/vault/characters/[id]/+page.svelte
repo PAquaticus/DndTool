@@ -78,6 +78,7 @@
 
         <h2>Spells</h2>
         <SpellSelector
+          tailwindClass={formRowTailwindClass}
           id="spellSelect"
           label="Spell"
           placeholder="Wish"

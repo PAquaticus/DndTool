@@ -5,6 +5,7 @@
   import Icon from '@iconify/svelte';
   import FormItem from '../genericInputComponents/FormItem.svelte';
   import FormRow from '../layout/FormRow.svelte';
+  import Table from '../genericInputComponents/Table.svelte';
   export let value: string | undefined;
   export let id: string;
   export let label: string;
@@ -14,7 +15,7 @@
   let response: APIReferenceList | undefined;
   let selectedSpell: string | undefined;
 
-  let entries: any[] = [];
+  let entries: string[] = [];
 
   onMount(async () => {
     const instance = new dndApi.SpellsApi({});
@@ -45,6 +46,16 @@
     <button on:click={onClick}><Icon class="text-xl" icon="ic:baseline-plus" /> </button>
   </div>
 </FormRow>
+
+<Table
+  data={entries}
+  columns={[
+    {
+      headerName: 'Spell Name',
+      tailwindClass: 'w-2/5 data-column',
+      valueFormatter: (data) => data
+    }
+  ]} />
 
 <style>
   .addSpellRowButton {

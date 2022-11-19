@@ -33,6 +33,10 @@
             ><Icon class="text-xl" icon="mdi:trash" />
           </button></td>
       </tr>
+
+      <tr class="h-28">
+        <td colspan="3">bla</td>
+      </tr>
     {/each}
   </table>
 </div>

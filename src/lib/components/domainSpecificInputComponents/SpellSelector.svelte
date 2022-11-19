@@ -15,6 +15,7 @@
 
   let response: APIReferenceList | undefined;
   let selectedSpell: string | undefined;
+  let selectedSpellMultiplicity: number | undefined;
   let spell: dndApi.Spell | undefined = undefined;
 
   let entries: dndApi.Spell[] = [];
@@ -32,6 +33,8 @@
       entries = entries.concat(res);
     });
     selectedSpell = undefined;
+    selectedSpellMultiplicity = undefined;
+    spell = undefined;
     document.getElementById('spellSelect')?.focus();
   };
 
@@ -60,10 +63,17 @@
       {/each}
     </select>
   </FormItem>
-
-  <div class="addSpellRowButton">
-    <button on:click={onClick}><Icon class="text-xl" icon="ic:baseline-plus" /> </button>
-  </div>
+  <FormItem id="spellMultiplicity" label="Category" tailwindClass="mr-4">
+    <select
+      id="spellMultiplicitySelect"
+      placeholder="X times / Day "
+      bind:value={selectedSpellMultiplicity}>
+      <option value={undefined} />
+      <option value={1}>At will</option>
+      <option value={2}>Spellslot based</option>
+      <option value={3}>X Times / Day</option>
+    </select>
+  </FormItem>
 </FormRow>
 
 <FormRow tailwindClass="mb-2">
@@ -72,13 +82,18 @@
   </FormItem>
 </FormRow>
 
-<FormRow tailwindClass="mb-8">
+<FormRow tailwindClass="mb-2">
   <TextInput
     id="spellShortDescriptionArea"
     label="Short description"
     tailwindClass="mr-4 w-full"
     value=""
     placeholder="Short description" />
+</FormRow>
+
+<FormRow tailwindClass="mb-8">
+  <button class="btn btn-base bg-surface-500 text-surface-100" on:click={onClick}
+    ><Icon class="text-xl" icon="ic:baseline-plus" /> Add Spell</button>
 </FormRow>
 
 <Table

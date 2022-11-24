@@ -77,6 +77,20 @@
         table
 
         <h2>Spells</h2>
+        <FormRow tailwindClass={formRowTailwindClass}>
+          <TextInput
+            tailwindClass="w-16 mr-4"
+            id="spellSaveDc"
+            label="DC"
+            placeholder="15"
+            value={character.dc} />
+          <TextInput
+            tailwindClass="w-16 mr-2"
+            id="spellAttackModifier"
+            label="Modifier"
+            placeholder="4"
+            value={character.spellAttackModifier} />
+        </FormRow>
         <SpellSelector
           tailwindClass={formRowTailwindClass}
           id="spellSelect"

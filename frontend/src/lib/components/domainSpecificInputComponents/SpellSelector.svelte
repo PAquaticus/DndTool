@@ -7,6 +7,8 @@
   import FormRow from '../layout/FormRow.svelte';
   import Table from '../genericInputComponents/Table.svelte';
   import TextInput from '../genericInputComponents/TextInput.svelte';
+  import PrismaClient from '$lib/services/clients/prismaClient';
+  import type { Spell } from '@prisma/client';
   export let value: string | undefined;
   export let id: string;
   export let label: string;
@@ -16,9 +18,9 @@
   let response: APIReferenceList | undefined;
   let selectedSpell: string | undefined;
   let selectedSpellMultiplicity: number | undefined;
-  let spell: dndApi.Spell | undefined = undefined;
+  let spell: Spell | null = null;
 
-  let entries: dndApi.Spell[] = [];
+  let entries: Spell[] = [];
 
   onMount(async () => {
     const instance = new dndApi.SpellsApi({});
@@ -30,17 +32,26 @@
       return;
     }
     loadSpell(selectedSpell).then((res) => {
+      if (res === null) {
+        return;
+      }
       entries = entries.concat(res);
     });
     selectedSpell = undefined;
     selectedSpellMultiplicity = undefined;
-    spell = undefined;
+    spell = null;
     document.getElementById('spellSelect')?.focus();
   };
 
   const loadSpell = async (spellIndex: string) => {
-    const instance = new dndApi.SpellsApi({});
-    return instance.apiSpellsIndexGet(spellIndex);
+    const prisma = new PrismaClient();
+    await prisma.$connect();
+    const spell: Spell | null = await prisma.spell.findFirst({
+      where: {
+        name: spellIndex
+      }
+    });
+    return spell;
   };
 </script>
 
@@ -51,7 +62,7 @@
       {placeholder}
       bind:value={selectedSpell}
       on:change={async () => {
-        spell = undefined;
+        spell = null;
         if (selectedSpell === undefined) {
           return;
         }
@@ -78,7 +89,7 @@
 
 <FormRow tailwindClass="mb-2">
   <FormItem id="spellDescriptionArea" label="Description" tailwindClass="mr-4 w-full">
-    <textarea class="h-32" disabled={spell === undefined} value={spell?.desc ?? ''} />
+    <textarea class="h-32" disabled={spell === undefined} value={spell?.description ?? ''} />
   </FormItem>
 </FormRow>
 
@@ -87,7 +98,7 @@
     id="spellShortDescriptionArea"
     label="Short description"
     tailwindClass="mr-4 w-full"
-    value=""
+    value={spell?.shortDescription ?? ''}
     placeholder="Short description" />
 </FormRow>
 

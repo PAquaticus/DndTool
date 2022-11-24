@@ -1,0 +1,1448 @@
+{
+    "spells": [
+        {
+            "name": "Acid Splash",
+            "desc": "1 or 2 creatures within 5 feet must succeed on a Dex. save or take 1d6 acid damage (damage/lvl).  "
+        },
+        {
+            "name": "Aid",
+            "desc": "Up to 3 creatures increase their hp maximum and current hp by 5 (+5 hp/lvl).  "
+        },
+        {
+            "name": "Alarm",
+            "desc": "Alert the caster or activate an alarm if a Tiny or larger creature enters a warded 20 ft cube.  "
+        },
+        {
+            "name": "Alter Self",
+            "desc": "Give a new form depending on the chosen option (Aquatic Adaptation, Change Appearance, or Natural Weapons).  "
+        },
+        {
+            "name": "Animal Friendship",
+            "desc": "A beast with Intelligence 3 or less must succeed on a Wis. save or be charmed (+1 beast/lvl).  "
+        },
+        {
+            "name": "Animal Messenger",
+            "desc": "A Tiny beast travels to deliver a 25 words message to a target (+48 h/lvl).  "
+        },
+        {
+            "name": "Animal Shapes",
+            "desc": "Willing targets within 30 ft turn into beasts of FP 4 or lower.  "
+        },
+        {
+            "name": "Animate Dead",
+            "desc": "Create a skeleton from bones or a zombie from a corpse, who is under the caster control (+2 creatures/lvl).  "
+        },
+        {
+            "name": "Animate Objects",
+            "desc": "Animate up to 10 non magic objects and control their actions up to 500 ft (+2 items/lvl).  "
+        },
+        {
+            "name": "Antilife Shell",
+            "desc": "Prevent creatures other than undead and constructs from entering in a 10 ft radius.  "
+        },
+        {
+            "name": "Antimagic Field",
+            "desc": "Create a 10 ft radius sphere in which spells and magic items no longer work.  "
+        },
+        {
+            "name": "Antipathy",
+            "desc": "Attract or repel (Wis. save in order to not be attracted or scared) a kind of creature designated within 60 ft.  "
+        },
+        {
+            "name": "Arcane Eye",
+            "desc": "Create an invisible eye with darkvision that sends the caster the mental image of what it sees.  "
+        },
+        {
+            "name": "Arcane Gate",
+            "desc": "Create 2 portals (max 500 ft between them) and allow teleport from one to the other.  "
+        },
+        {
+            "name": "Arcane Lock",
+            "desc": "Lock an objet (door, window, chest, etc) and the caster can set a password to suppresses the spell for 1 minute.  "
+        },
+        {
+            "name": "Armor of Agathys",
+            "desc": "The caster gains 5 temporary hp and creatures who hits him with a melee attack take 5 cold damage (+5 hp and damage/lvl).  "
+        },
+        {
+            "name": "Arms of Hadar",
+            "desc": "Creatures in a 10 ft radius must succeed on a Str. save or take 2d6 necrotic damage (damage/lvl)  "
+        },
+        {
+            "name": "Astral Projection",
+            "desc": "The caster and up to 8 creatures are projected into the Astral Plane.  "
+        },
+        {
+            "name": "Augury",
+            "desc": "The caster obtains an omen about the result of an action within the next 30 min (weal, woe, both or nothing).  "
+        },
+        {
+            "name": "Aura of Life",
+            "desc": "Creatures in a 30 ft radius gain resistance to necrotic damage and regain 1 hp when at 0 hp.  "
+        },
+        {
+            "name": "Aura of Purity",
+            "desc": "Creatures in a 30 ft radius can not become diseased, gain resistance to poison, and get advantage to various saving throws.  "
+        },
+        {
+            "name": "Aura of Vitality",
+            "desc": "One target in a 30 ft radius regains 2d6 hp.  "
+        },
+        {
+            "name": "Awaken",
+            "desc": "Give a beast or plant (Intelligence 3 or less) the ability to speek and senses similar to a human's for 30 days.  "
+        },
+        {
+            "name": "Bane",
+            "desc": "Up to 3 targets must succeed on a Cha. save or subtract 1d4 from their attack roll or saving throw (+1 creature/lvl).  "
+        },
+        {
+            "name": "Banishing Smite",
+            "desc": "If the weapon attack hits, deal an extra 5d10 force damage. Target reduced to 50 hp or fewer this way are banised.  "
+        },
+        {
+            "name": "Banishment",
+            "desc": "The target must succeed on a Cha. save or be banished to a harmless demiplane (+1 creature/lvl).  "
+        },
+        {
+            "name": "Barkskin",
+            "desc": "The target's AC can't be less than 16.  "
+        },
+        {
+            "name": "Beacon of Hope",
+            "desc": "Targets gain advantage on Wis. saving throws and death saving throws, and regain the maximum number of hp from healing.  "
+        },
+        {
+            "name": "Beast Sense",
+            "desc": "The caster can see/hear/feel through the senses of a willing beast.  "
+        },
+        {
+            "name": "Bestow Curse",
+            "desc": "The target must succeed on a Wis. save or suffer an effect as a disadvantage to a check or lose an action (duration/lvl).  "
+        },
+        {
+            "name": "Bigby",
+            "desc": "Create a Large hand with a Strength of 26 that can strike (4d8 force damage), push, grapple, or protect (damage/lvl).  "
+        },
+        {
+            "name": "Blade Barrier",
+            "desc": "Create a 100 x 20 x 5 ft wall that provides three quarters cover and can inflict 6d10 slashing damage if passed through.  "
+        },
+        {
+            "name": "Blade Ward",
+            "desc": "The caster gets resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.  "
+        },
+        {
+            "name": "Bless",
+            "desc": "Up to 3 targets can add 1d4 to their attack roll or saving throw (+1 creature/lvl).  "
+        },
+        {
+            "name": "Blight",
+            "desc": "The target must succeed on a Con. save or take 8d8 necrotic damage (damage/lvl).  "
+        },
+        {
+            "name": "Blinding Smite",
+            "desc": "If the attack hits, deals an extra 3d8 radiant damage and the target must succeed on a Con. save or be blinded.  "
+        },
+        {
+            "name": "Blindness",
+            "desc": "The target must succeed on a Con. save or become blinded or deafened (+1 creature/lvl).  "
+        },
+        {
+            "name": "Blink",
+            "desc": "The caster has 50% of chance to switch to the Ethereal Plane, then returns to the space he vanished from on the next turn.  "
+        },
+        {
+            "name": "Blur",
+            "desc": "The caster's body becomes blurred and creatures that attack him have disadvantage on attack rolls against him.  "
+        },
+        {
+            "name": "Branding Smite",
+            "desc": "If a weapon attack hits, deals an extra 2d6 radiant damage and the target sheds dim light in 5 ft radius (damage/lvl).  "
+        },
+        {
+            "name": "Burning Hands",
+            "desc": "Creatures in a 15 ft cone must succeed on a Dex. save or take 3d6 fire damage (damage/lvl).  "
+        },
+        {
+            "name": "Call Lightning",
+            "desc": "Creatures in a 5 ft radius must succeed on a Dex. save or take 3d10 lightning damage (damage/lvl) on each turn.  "
+        },
+        {
+            "name": "Calm Emotions",
+            "desc": "Creatures in a 20 foot radius sphere must succeed on a Cha. save or no longer be charmed/frightened, or be indifferents.  "
+        },
+        {
+            "name": "Chain Lightning",
+            "desc": "Up to 4 different targets must succeed on a Dex. save or take 10d8 lightning damage (+1 target/lvl).  "
+        },
+        {
+            "name": "Charm Person",
+            "desc": "The humanoid target must succeed on a Wis. save or be charmed by the caster (+1 creature/lvl).  "
+        },
+        {
+            "name": "Chill Touch",
+            "desc": "If the spell attack hits, deals 1d8 necrotic damage (damage/lvl) and the target can't regain hp immediately.  "
+        },
+        {
+            "name": "Chromatic Orb",
+            "desc": "If the spell attack hits, deals 3d8 damage of a previously determined type (damage/lvl)  "
+        },
+        {
+            "name": "Circle of Death",
+            "desc": "Creatures in a 60 ft radius sphere must succeed on a Con. save or take 8d6 necrotic damage (damage/lvl).  "
+        },
+        {
+            "name": "Circle of Power",
+            "desc": "Friendly creatures in a 30 ft radius have advantage on saving throws against spells and other magicial effects.  "
+        },
+        {
+            "name": "Clairvoyance",
+            "desc": "Create an invisible sensor in a familiar location within 1 mile, allowing to see or to hear (to choose, can switch).  "
+        },
+        {
+            "name": "Clone",
+            "desc": "Create in 120 days the inert double of a living creature. If the original creature dies, its soul is transferred to the clone.  "
+        },
+        {
+            "name": "Cloud of Daggers",
+            "desc": "Creatures in a 5 ft cube take automatically 4d4 slashing damage (damage/lvl).  "
+        },
+        {
+            "name": "Cloudkill",
+            "desc": "Creatures in a 20 ft radius sphere must succeed on a Con. save or take 5d8 poison damage (damage/lvl).  "
+        },
+        {
+            "name": "Color Spray",
+            "desc": "6d10 creatures hp are dazzled in ascending order of their current hp (+2d10 hp/lvl).  "
+        },
+        {
+            "name": "Command",
+            "desc": "The target must succeed on a Wis. save or follow your order as Approach, Drop, Flee, Fall, Halt, etc (+1 creature/lvl).  "
+        },
+        {
+            "name": "Commune",
+            "desc": "Allow to obtain from a divine entity the answers (yes or no) to 3 questions.  "
+        },
+        {
+            "name": "Commune with Nature",
+            "desc": "The caster gets 3 informations about the surrounding territory. Doesn't function in dungeons or towns.  "
+        },
+        {
+            "name": "Compelled Duel",
+            "desc": "The target must succeed on a Wis. save or get a disadvantage on attack rolls against creatures other than the caster.  "
+        },
+        {
+            "name": "Comprehend Languages",
+            "desc": "The caster understands any spoken and written (1 min/page) language. Doesn't decode secret messages.  "
+        },
+        {
+            "name": "Compulsion",
+            "desc": "Targets within 30 ft must succeed on a Wis. save or move in a specified direction.  "
+        },
+        {
+            "name": "Cone of Cold",
+            "desc": "Creatures in a 60 ft cone must succeed on a Con. save or take 8d8 cold damage (damage/lvl).  "
+        },
+        {
+            "name": "Confusion",
+            "desc": "Creatures in a 10 ft radius sphere must succeed on a Wis. save or can't take actions normally (+ 5 ft radius/lvl).  "
+        },
+        {
+            "name": "Conjure Animals",
+            "desc": "Summon from 1 beast of CR 2 to 8 beasts of CR 1/4, friendly (nbr of creatures/lvl).  "
+        },
+        {
+            "name": "Conjure Barrage",
+            "desc": "Creatures in a 60 ft cone must succeed on a Dex. save or take 3d8 damage from the weapon/ammunition used.  "
+        },
+        {
+            "name": "Conjure Celestial",
+            "desc": "Summon 1 celestial of CR 4, friendly (CR +1/lvl).  "
+        },
+        {
+            "name": "Conjure Elemental",
+            "desc": "Summon 1 elemental of CR 5, friendly (CR +1/lvl).  "
+        },
+        {
+            "name": "Conjure Fey",
+            "desc": "Summon 1 fey of CR 6, friendly (CR +1/lvl).  "
+        },
+        {
+            "name": "Conjure Minor Elementals",
+            "desc": "Summon from 1 elemental of CR 2 to 8 elemental of CR 1/4, friendly (nbr of creatures/lvl).  "
+        },
+        {
+            "name": "Conjure Volley",
+            "desc": "Creatures in a 40 ft radius, 20 ft high cylinder must succeed on a Dex. save or take 8d8 damage from the weapon/ammunition used.  "
+        },
+        {
+            "name": "Conjure Woodland Beings",
+            "desc": "Summon from 1 fey of CR 2 to 8 fey of CR 1/4, friendly (nbr of creatures/lvl).  "
+        },
+        {
+            "name": "Contact Other Plane",
+            "desc": "Contact an extraplanar entity to ask it 5 questions if an Int. save is successful. Otherwise, 6d6 psychic damage.  "
+        },
+        {
+            "name": "Contagion",
+            "desc": "If the spell attack hits, target is afflicted with a disease to choose from 6 proposed.  "
+        },
+        {
+            "name": "Contingency",
+            "desc": "Condition the activation of a 5th level spell or lower that can target the caster.  "
+        },
+        {
+            "name": "Continual Flame",
+            "desc": "Create a flame that produces a light equivalent in brightness to a torch, but does not emit any heat.  "
+        },
+        {
+            "name": "Control Water",
+            "desc": "Control the water in a 100 ft cube (cause a flood, part the water, redirect the flow, create a whirlpool).  "
+        },
+        {
+            "name": "Control Weather",
+            "desc": "Modify gradually the climatic conditions outdoors (precipitation, temperature and wind force).  "
+        },
+        {
+            "name": "Cordon of Arrows",
+            "desc": "4 ammunition deal 1d6 piercing damage if the target doesn't succeed on a Dex. save (nbr of ammunition/lvl).  "
+        },
+        {
+            "name": "Counterspell",
+            "desc": "In reaction, fail a spell of 3rd level or lower. Ability check if the spell is 4th level or higher (threshold/lvl).  "
+        },
+        {
+            "name": "Create Food and Water",
+            "desc": "Create 45 pounds of food and 30 gallons of water, enough to sustain 15 humanoids for 24 hours.  "
+        },
+        {
+            "name": "Create or Destroy Water",
+            "desc": "Create or destroy up to 10 gallons of water (+10 gallons/lvl).  "
+        },
+        {
+            "name": "Create Undead",
+            "desc": "Up to 3 Medium or Small humanoids corpses become a ghoul who obey the caster for 24 h (nbr and type of creatures/lvl).  "
+        },
+        {
+            "name": "Creation",
+            "desc": "Create a non living object made of vegetable matter or mineral and no larger than a 5 ft cube (+5 ft/lvl).  "
+        },
+        {
+            "name": "Crown of Madness",
+            "desc": "The target must succeed on a Wis. save or be charmed. It then can attack a target designated by the caster.  "
+        },
+        {
+            "name": "Crusader",
+            "desc": "Friendly creatures in a 30 ft radius deal an extra 1d4 radiant damage when they hit with a weapon attack.  "
+        },
+        {
+            "name": "Cure Wounds",
+            "desc": "1 creature regains 1d8+Ability.Mod (+1d8 hp/lvl).  "
+        },
+        {
+            "name": "Dancing Lights",
+            "desc": "Create up to 4 torch sized lights that shed dim light in a 10 ft radius and can be moved later up to 60 ft.  "
+        },
+        {
+            "name": "Darkness",
+            "desc": "Fill a 15 ft radius sphere of magical darkness.  "
+        },
+        {
+            "name": "Darkvision",
+            "desc": "The target can see in the dark within 60 feet.  "
+        },
+        {
+            "name": "Daylight",
+            "desc": "Create a sphere that sheds bright light in a 60 ft radius and dim light in an additional 60 ft radius.  "
+        },
+        {
+            "name": "Death Ward",
+            "desc": "When the target drops to 0 hp for the first time, it automatically returns to 1 hp.  "
+        },
+        {
+            "name": "Delayed Blast Fireball",
+            "desc": "Creatures in a 20 ft radius sphere must succeed on a Dex. save or take 12d6 fire damage (damage/lvl).  "
+        },
+        {
+            "name": "Demiplane",
+            "desc": "Create a door that leads to a demiplane (30 ft cube). Creatures still in the demiplane at the end of the spell are trapped.  "
+        },
+        {
+            "name": "Destructive Wave",
+            "desc": "Targets in a 30 ft radius must succeed on a Con. save or take 5d6 thunder damage and 5d6 radiant or necrotic damage.  "
+        },
+        {
+            "name": "Detect Evil and Good",
+            "desc": "The caster senses and locates aberration, celestial, elemental, fey, fiend, or undead within 30 ft.  "
+        },
+        {
+            "name": "Detect Magic",
+            "desc": "The caster senses the presence of magic in a 30 ft radius and learns its school of magic.  "
+        },
+        {
+            "name": "Detect Poison and Disease",
+            "desc": "The caster senses and identifies poison, poisonous creature, or disease within 30 ft.  "
+        },
+        {
+            "name": "Detect Thoughts",
+            "desc": "The caster detects the superficial thoughts of a creature within 30 ft, and the deepest if the target misses a Wis. save.  "
+        },
+        {
+            "name": "Dimension Door",
+            "desc": "The caster and another creature of the same size are teleported to a maximum of 500 feet.  "
+        },
+        {
+            "name": "Disguise Self",
+            "desc": "Modify the appearance of the caster (its physical and its equipment) thanks to an illusion.  "
+        },
+        {
+            "name": "Disintegrate",
+            "desc": "The target must succeed on a Dex. save or take 10d6+40 force damage (damage/lvl). An Large or smaller object is disintegrated.  "
+        },
+        {
+            "name": "Dispel Evil and Good",
+            "desc": "End a condition (charmed, frightened, or possessed) or bannish a creature to its home plane (Cha. save).  "
+        },
+        {
+            "name": "Dispel Magic",
+            "desc": "End spells of 3rd level 3 or lower on a target. Ability check for each spell of 4th level or higher (threshold/lvl).  "
+        },
+        {
+            "name": "Dissonant Whispers",
+            "desc": "The target must succeed on a Wis. save or take 3d6 psychic damage and move away (damage/lvl).  "
+        },
+        {
+            "name": "Divination",
+            "desc": "The caster gets a truthful reply to 1 question about an event to occur within 7 days.  "
+        },
+        {
+            "name": "Divine Favor",
+            "desc": "If a weapon attack hits, deals an extra 1d4 radiant damage.  "
+        },
+        {
+            "name": "Divine Word",
+            "desc": "Targets must succeed on a Cha. save or suffer an effect (deafened, blinded, etc). Some creatures are banned.  "
+        },
+        {
+            "name": "Dominate Beast",
+            "desc": "A beast within 60 ft must succeed on a Wis. save or be charmed and obey the launcher (duration/lvl).  "
+        },
+        {
+            "name": "Dominate Monster",
+            "desc": "The target must succeed on a Wis. save or be charmed and obey the caster (duration/lvl).  "
+        },
+        {
+            "name": "Dominate Person",
+            "desc": "One humanoid must succeed on a Wis. save or be charmed and obey the caster (duration/lvl).  "
+        },
+        {
+            "name": "Drawmij",
+            "desc": "Mark a 10 pounds or less object and allow to teleport it into the caster hand, wherever it is, if not held.  "
+        },
+        {
+            "name": "Dream",
+            "desc": "Shape the dreams of a sleeping creature who can take 3d6 psychic damage if it fails on a Wis. save.  "
+        },
+        {
+            "name": "Druidcraft",
+            "desc": "Provide various minor effects related to nature (weather forecast, flowering, sensory effect, etc).  "
+        },
+        {
+            "name": "Earthquake",
+            "desc": "Creatures in a 100 ft radius must succeed on a Dex. save or be knocked prone. Cause damage to structures.  "
+        },
+        {
+            "name": "Eldritch Blast",
+            "desc": "If the spell attack hits, deals 1d10 force damage (nbr of beam/lvl).  "
+        },
+        {
+            "name": "Elemental Weapon",
+            "desc": "A weapon becomes magical with a +1 bonus to attack rolls and deal an extra 1d4 damage of a chosen type (bonus/lvl).  "
+        },
+        {
+            "name": "Enhance Ability",
+            "desc": "The target gains advantage on ability checks for one predefined ability, and other bonuses in such cases (+1 creature/lvl).  "
+        },
+        {
+            "name": "Enlarge",
+            "desc": "Double or halve the size of a creature (Con. save) or an object.  "
+        },
+        {
+            "name": "Ensnaring Strike",
+            "desc": "The target must succeed on a Str. save or be restrained and take 1d6 piercing damage (damage/lvl).  "
+        },
+        {
+            "name": "Entangle",
+            "desc": "Creatures in a 20 ft square (difficult terrain) must succeed on a Str. save or be restrained.  "
+        },
+        {
+            "name": "Enthrall",
+            "desc": "Targets must succeed on a Wis. save or have disadvantage on Wisdom (Perception) checks to perceive others creatures.  "
+        },
+        {
+            "name": "Etherealness",
+            "desc": "The caster is projected into the Ethereal Plane (nbr of creatures/lvl).  "
+        },
+        {
+            "name": "Evard",
+            "desc": "Creatures in a 20 ft square must succeed on a Dex. save or take 3d6 bludgeoning damage and be restrained.  "
+        },
+        {
+            "name": "Expeditious Retreat",
+            "desc": "The caster can take the Dash action by using a bonus action.  "
+        },
+        {
+            "name": "Eyebite",
+            "desc": "The target in a 60 ft radius must succeed on a Wis. save or take on a the following effects: asleep, panicked or sickened.  "
+        },
+        {
+            "name": "Fabricate",
+            "desc": "Convert raw materials into Large or smaller simples objects of the same material.  "
+        },
+        {
+            "name": "Faerie Fire",
+            "desc": "Creatures in a 20 ft cube must succeed on a Dex. save or grant advantage against them to attackers.  "
+        },
+        {
+            "name": "False Life",
+            "desc": "The caster gains 1d4+4 temporary hit points (+5 hp/lvl).  "
+        },
+        {
+            "name": "Fear",
+            "desc": "Creatures in a 30 ft cone must succeed on a Wis. save or drop whatever they are holding, become frightened and move away.  "
+        },
+        {
+            "name": "Feather Fall",
+            "desc": "Up to 5 creatures fall at 60 feet per round and take no falling damage before the spell ends.  "
+        },
+        {
+            "name": "Feeblemind",
+            "desc": "The target take 4d6 psychic damage and must succeed on an Int. save or his Charisma and Intelligence scores become 1.  "
+        },
+        {
+            "name": "Feign Death",
+            "desc": "The willing target appears dead to all outward inspection.  "
+        },
+        {
+            "name": "Find Familiar",
+            "desc": "Summon a small animal that obeys the caster and telepathically shares his senses with him.  "
+        },
+        {
+            "name": "Find Steed",
+            "desc": "Summon a spirit that assumes the form a steed (horse, elk, etc) telepathically linked to the caster.  "
+        },
+        {
+            "name": "Find the Path",
+            "desc": "Determine the shortest and most direct physical path to reach a known destination.  "
+        },
+        {
+            "name": "Find Traps",
+            "desc": "The caster senses the presence of any trap in a 120 fr radius, but the spell don't give their location.  "
+        },
+        {
+            "name": "Finger of Death",
+            "desc": "The target must succeed on a Con. save or take 7d8+30 necrotic damage. If killed, becomes a zombie under the caster command.  "
+        },
+        {
+            "name": "Fire Bolt",
+            "desc": "If the spell attack hits, deals 1d10 fire damage (damage/lvl). An object can ignite.  "
+        },
+        {
+            "name": "Fire Shield",
+            "desc": "The caster gains resistance to cold or fire damage, and deals 2d8 damage to attackers who hit him within 5 ft.  "
+        },
+        {
+            "name": "Fire Storm",
+            "desc": "Creatures in ten 10 ft cube must succeed on a Dex. save or take 7d10 fire damage.  "
+        },
+        {
+            "name": "Fireball",
+            "desc": "Creatures in a 20 ft radius must succeed on a Dex. save or take 8d6 fire damage (damage/lvl).  "
+        },
+        {
+            "name": "Flame Blade",
+            "desc": "If the spell attack hits, deals 3d6 fire damage (damage/lvl). Shed bright light in 10 ft and dim light in additional 10 ft.  "
+        },
+        {
+            "name": "Flame Strike",
+            "desc": "Creatures in a 10 ft radius, 40 ft high cylinder must succeed on a Dex. save or take 4d6 fire and 4d6 radiant (damage/lvl).  "
+        },
+        {
+            "name": "Flaming Sphere",
+            "desc": "Creatures within 5 ft from a 5 ft diameter sphere must succeed on a Dex. save or take 2d6 fire damage (damage/lvl).  "
+        },
+        {
+            "name": "Flesh to Stone",
+            "desc": "The target within 60 ft must succeed on a Con. save or be restrained, or petrified after 3 failures.  "
+        },
+        {
+            "name": "Fly",
+            "desc": "The target gets a flying speed of 60 ft (+1 creature/lvl).  "
+        },
+        {
+            "name": "Fog Cloud",
+            "desc": "Makes an area heavily obscured in a 20 ft radius sphere (+20 ft/lvl).  "
+        },
+        {
+            "name": "Forbiddance",
+            "desc": "Prevent teleporting to the protected area and inflicts 5d10 radiant or necrotic damage to some type of creatures.  "
+        },
+        {
+            "name": "Forcecage",
+            "desc": "Creates a 20 ft cage or a 10 ft box of magical force that traps a creature. Escape by magicial means only.  "
+        },
+        {
+            "name": "Foresight",
+            "desc": "1 creature sees its near future, can not be surprised and has advantage on his rolls. Attacks against it have disadvantage.  "
+        },
+        {
+            "name": "Freedom of Movement",
+            "desc": "Target's movement is unaffected by difficult terrain, spells or water.  "
+        },
+        {
+            "name": "Friends",
+            "desc": "The casters gets advantage on all Charisma checks directed at one chosen creature that isn't hostile toward him.  "
+        },
+        {
+            "name": "Gaseous Form",
+            "desc": "The target turns into a cloud, gets a flying speed of 10 ft, and can pass through small holes.  "
+        },
+        {
+            "name": "Gate",
+            "desc": "Create a portal to another plan. Also allows to summon a creature from another plane.  "
+        },
+        {
+            "name": "Geas",
+            "desc": "The target must succeed on a Wis. save or be charmed and take 5d10 psychic if it doesn't obey (duration/lvl).  "
+        },
+        {
+            "name": "Gentle Repose",
+            "desc": "Protect a corpse from decay or to become undead.  "
+        },
+        {
+            "name": "Giant Insect",
+            "desc": "Transform insects (from 10 centipedes to 1 scorpion) into giant creatures that obey the caster's orders.  "
+        },
+        {
+            "name": "Glibness",
+            "desc": "Give 15 to a Charisma check and hides the lies during a magic detection.  "
+        },
+        {
+            "name": "Globe of Invulnerability",
+            "desc": "Block 5th level spells or lower within a 10 ft radius (threshold/lvl).  "
+        },
+        {
+            "name": "Glyph of Warding",
+            "desc": "A glyph on an object deals 5d8 damage in a 20 ft radius (damage/lvl) or casts a 3rd level spell (lvl/lvl) when triggered.  "
+        },
+        {
+            "name": "Goodberry",
+            "desc": "Create up to 10 berries that restore 1 hp each and keep their power for 24 hours.  "
+        },
+        {
+            "name": "Grasping Vine",
+            "desc": "The target must succeed on a Dex. save or be pulled 20 ft toward the vine.  "
+        },
+        {
+            "name": "Grease",
+            "desc": "Creatures in a 10 ft square (difficult terrain) must succeed on a Dex. save or fall prone.  "
+        },
+        {
+            "name": "Greater Invisibility",
+            "desc": "The target becomes invisible for 1 minute.  "
+        },
+        {
+            "name": "Greater Restoration",
+            "desc": "End one condition (charmed or petrified), one curse, any ability scores or hp reduction, or one exhaustion level.  "
+        },
+        {
+            "name": "Guardian of Faith",
+            "desc": "Hostiles creatures within a 10 ft radius of the created guardian must succeed on a Dex. save or take 20 radiant damage.  "
+        },
+        {
+            "name": "Guards and Wards",
+            "desc": "Create a ward that protect a 50 ft square. Can set a password to immunize individuals.  "
+        },
+        {
+            "name": "Guidance",
+            "desc": "The target can add 1d4 to one ability check of its choice.  "
+        },
+        {
+            "name": "Guiding Bolt",
+            "desc": "If the spell attack hits, deals 4d6 radiant damage (damage/lvl) and the next attack roll will have advantage.  "
+        },
+        {
+            "name": "Gust of Wind",
+            "desc": "Creatures on a 60 ft long, 10 ft wide line mus succeed on a Str. save or be pushed 15 ft away.  "
+        },
+        {
+            "name": "Hail of Thorns",
+            "desc": "Creatures in a 5 ft radius must succeed on a Dex. save or take 1d10 piercing damage (damage/lvl).  "
+        },
+        {
+            "name": "Hallow",
+            "desc": "Prevent celestials, elementals, fey, fiends, and undead to enter a 60 ft radius area and protect/handicap the targets.  "
+        },
+        {
+            "name": "Hallucinatory Terrain",
+            "desc": "Make a natural terrain looks like another type (for example a road becomes a swamp or a crevasse).  "
+        },
+        {
+            "name": "Harm",
+            "desc": "The target must succeed on a Con. save or take 14d6 necrotic damage. The spell can't kill it however.  "
+        },
+        {
+            "name": "Haste",
+            "desc": "Target's speed is doubled. It also gains a +2 bonus to AC, advantage to Dex. saves and 1 additional action.  "
+        },
+        {
+            "name": "Heal",
+            "desc": "1 creature regains 70 hp and are cured of diseases, blindness, and deafness (+10 hp/lvl).  "
+        },
+        {
+            "name": "Healing Word",
+            "desc": "1 creature regains 1d4+Ability.Mod (+1d4 hp/lvl).  "
+        },
+        {
+            "name": "Heat Metal",
+            "desc": "Creatures in physical contact with the metal object take 2d8 fire damage (damage/lvl).  "
+        },
+        {
+            "name": "Hellish Rebuke",
+            "desc": "The target must succeed on a Dex. save or take 2d10 fire damage (damage/lvl).  "
+        },
+        {
+            "name": "Heroes",
+            "desc": "Produce a feast for 12 guests that cures diseases, immunizes to poison and increases hp by 2d10 for 24 hours.  "
+        },
+        {
+            "name": "Heroism",
+            "desc": "The target is immune to being frightened and gains temporary hp equal to its Ability.Mod each turns (+1 creature/lvl).  "
+        },
+        {
+            "name": "Hex",
+            "desc": "If an attack hits, deals an extra 1d6 necrotic damage. Disadvantage on achosem ability check (duration/lvl).  "
+        },
+        {
+            "name": "Hold Monster",
+            "desc": "Target must succeed on a Wis. save or be paralyzed (+1 creature/lvl).  "
+        },
+        {
+            "name": "Hold Person",
+            "desc": "The target must succeed on a Wis. save or be paralyzed (+1 creature/lvl).  "
+        },
+        {
+            "name": "Holy Aura",
+            "desc": "Targets in a 30 ft radius have advantage on saving throws. Other creatures have disadvantage on attack rolls against them.  "
+        },
+        {
+            "name": "Hunger of Hadar",
+            "desc": "Creatures in a 20 ft radius sphere take 2d6 cold damage et must succeed on a Dex. save or take 2d6 acid damage.  "
+        },
+        {
+            "name": "Hunter",
+            "desc": "The target take an extra 1d6 damage and caster has advantage on Wisdom (Perception/Survival) checks to find it (duration/lvl).  "
+        },
+        {
+            "name": "Hypnotic Pattern",
+            "desc": "Creatures in a 30 ft cube must succeed on a Wis. save or be charmed and incapacitated, with a speed of 0.  "
+        },
+        {
+            "name": "Ice Storm",
+            "desc": "Creatures in a 20 ft radius, 40 ft high cylinder must succeed on a Dex. save or take 2d8 bludgeoning damage and 4d6 cold damage.  "
+        },
+        {
+            "name": "Identify",
+            "desc": "The caster obtains properties of a magic item (attunement, charges) or knows if an item or a creature is affected by a spell.  "
+        },
+        {
+            "name": "Illusory Script",
+            "desc": "Write a secret message that can only be read by a designated target or a creature with truesight.  "
+        },
+        {
+            "name": "Imprisonment",
+            "desc": "The target within 30 ft must succeed on a Wis. save or be held prisoner. The form is to choose from 6 options.  "
+        },
+        {
+            "name": "Incendiary Cloud",
+            "desc": "Creatures in a 20 ft radius sphere must succeed on a Dex. save or take 10d8 fire damage.  "
+        },
+        {
+            "name": "Inflict Wounds",
+            "desc": "If the spell attack hits, deals 3d10 necrotic damage (damage/lvl).  "
+        },
+        {
+            "name": "Insect Plague",
+            "desc": "Creatures in a 20 ft radius sphere must succeed on a Con. save or take 4d10 piercing damage (damage/lvl).  "
+        },
+        {
+            "name": "Invisibility",
+            "desc": "The target becomes invisible during 1 hour or until she attacks or casts a spell (+1 creature/lvl).  "
+        },
+        {
+            "name": "Jump",
+            "desc": "The target gets a jump distance multiplicated by 3.  "
+        },
+        {
+            "name": "Knock",
+            "desc": "Unlock or unbar 1 object (door, chest, padlock, set of manacles, etc) or suppressed the arcane lock spell for 10 minutes.  "
+        },
+        {
+            "name": "Legend Lore",
+            "desc": "The caster obtains information about a person, place, or object. The lore consist of tales or stories.  "
+        },
+        {
+            "name": "Leomund",
+            "desc": "Hide a chest (3 x 2 x 2 ft) and its contents in the Ethereal Plane.  "
+        },
+        {
+            "name": "Leomund",
+            "desc": "Create a 10 ft radius dome that can shelter and protect 9 Medium creatures with the caster.  "
+        },
+        {
+            "name": "Lesser Restoration",
+            "desc": "End one disease or one condition (blinded, deafened, paralyzed, or poisoned) on 1 creature.  "
+        },
+        {
+            "name": "Levitate",
+            "desc": "1 creature or object that weighs up to 500 pounds rises vertically up to 20 ft then remains suspended.  "
+        },
+        {
+            "name": "Light",
+            "desc": "Make an object to shed bright light in a 20 ft radius and dim light in an additional 20 ft radius.  "
+        },
+        {
+            "name": "Lightning Arrow",
+            "desc": "If the attack hits, deals 4d8 Iightning damage. Creatures within 10 ft must succeed on a Dex. save or take 2d8 lightning damage.  "
+        },
+        {
+            "name": "Lightning Bolt",
+            "desc": "Creatures on a 100 ft long, 5 ft wide line must succeed on a Dex. save or take 8d6 lightning damage (damage/lvl).  "
+        },
+        {
+            "name": "Locate Animals or Plants",
+            "desc": "Give the direction and distance to a kind of beast or plant within 5 miles.  "
+        },
+        {
+            "name": "Locate Creature",
+            "desc": "The caster senses the direction in which a familiar creature is within a 1000 ft radius.  "
+        },
+        {
+            "name": "Locate Object",
+            "desc": "The caster senses the direction to the location of an objet you are familiar with, within a 1000 ft radius.  "
+        },
+        {
+            "name": "Longstrider",
+            "desc": "The target gets a speed increased by 10 ft (+1 creature/lvl).  "
+        },
+        {
+            "name": "Mage Armor",
+            "desc": "The target, willing and not wearing armor, gets an AC equal to 13+Dex.Mod.  "
+        },
+        {
+            "name": "Mage Hand",
+            "desc": "Create a spectral hand that can in a 30 ft radius manipulate an object, open a door, stow an item, etc.  "
+        },
+        {
+            "name": "Magic Circle",
+            "desc": "Create a 10 ft radius, 20 ft tall cylinder that protect from celestials, elementals, fey, fiends, and/or undead (+1 h/lvl).  "
+        },
+        {
+            "name": "Magic Jar",
+            "desc": "The caster projects his soul into an urn and then returns to his body or possesses a humanoid body.  "
+        },
+        {
+            "name": "Magic Missile",
+            "desc": "3 missiles deal automatically 1d4+1 force damage each to one or several creatures (+1 missile/lvl).  "
+        },
+        {
+            "name": "Magic Mouth",
+            "desc": "Creates a magical mouth that will repeat a message of up to 25 words when a trigger condition is met.  "
+        },
+        {
+            "name": "Magic Weapon",
+            "desc": "Turn a weapon into a +1 magic weapon for attack rolls and damage rolls (+2 or +3 bonus/lvl).  "
+        },
+        {
+            "name": "Major Image",
+            "desc": "Create the image of an animated object or creature, with sounds and smells (without concentration/lvl).  "
+        },
+        {
+            "name": "Mass Cure Wounds",
+            "desc": "Up to 6 creatures regain 3d8+Spell.Ability.Mod (+1d8 hp/lvl).  "
+        },
+        {
+            "name": "Mass Heal",
+            "desc": "Several creatures regain a total of 700 ph and are cured of diseases, blindness, and deafness.  "
+        },
+        {
+            "name": "Mass Healing Word",
+            "desc": "Up to 6 creatures regain 1d4+Ability.Mod (+1d4 hp/lvl).  "
+        },
+        {
+            "name": "Mass Suggestion",
+            "desc": "Up to 12 targets must succeed on a Wis. save or follow the suggestion given by the caster (duration/lvl).  "
+        },
+        {
+            "name": "Maze",
+            "desc": "Banish a creature into a labyrinthine demiplane. Intelligence check to escape before the end of the spell.  "
+        },
+        {
+            "name": "Meld into Stone",
+            "desc": "The caster can penetrate the stone.  "
+        },
+        {
+            "name": "Melf",
+            "desc": "If the spell attack hits, deals 4d4 acid damage, then 2d4 acid damage on the next round (damage/lvl).  "
+        },
+        {
+            "name": "Mending",
+            "desc": "Repair break or tear in an object (broken chain link, two halves of a broken key, torn cloak, leaking wineskin, etc).  "
+        },
+        {
+            "name": "Message",
+            "desc": "The caster whispers a message to a creature within 120 ft who will be the only one to hear it. It can reply the same way.  "
+        },
+        {
+            "name": "Meteor Swarm",
+            "desc": "Creatures in a 40 ft radius sphere must succeed on a Dex. save or take 20d6 fire damage and 20d6 bludgeoning damage.  "
+        },
+        {
+            "name": "Mind Blank",
+            "desc": "The target is immune to psychic damage, reading thoughts, divination spells, and the charmed condition.  "
+        },
+        {
+            "name": "Minor Illusion",
+            "desc": "Create a sound or an immobile image of an object no larger than a 5 ft cube.  "
+        },
+        {
+            "name": "Mirage Arcane",
+            "desc": "Tansform the appearance (sight, sound, smell and feel) of a 1 mile square.  "
+        },
+        {
+            "name": "Mirror Image",
+            "desc": "Create 3 illusory duplicates of the caster, each of them having a CA equal to 10 + Dex.Mod and being destroyed if they are hit.  "
+        },
+        {
+            "name": "Mislead",
+            "desc": "The caster becomes invisible and creates a double that moves, acts and speaks. The caster can see and hear through this double.  "
+        },
+        {
+            "name": "Misty Step",
+            "desc": "The caster is teleported up to 30 feet.  "
+        },
+        {
+            "name": "Modify Memory",
+            "desc": "The target must succeed on a Wis. save or be charmed and its memory altered (seniority of memories/lvl).  "
+        },
+        {
+            "name": "Moonbeam",
+            "desc": "Creatures in a 5 ft radius, 40 ft high cylinder must succeed on a Con. save or take 2d10 radiant damage (damage/lvl).  "
+        },
+        {
+            "name": "Mordenkainen",
+            "desc": "Summon an invisible watchdog that barks when a creature approaches and attacks it (4d8 piercing damage).  "
+        },
+        {
+            "name": "Mordenkainen",
+            "desc": "Create an extradimensional mansion with all the comforts that can shelter the caster and other creatures.  "
+        },
+        {
+            "name": "Mordenkainen",
+            "desc": "Create a secure cube up to 100 ft on each side. The type of protection is to choose (+100 ft on each side/lvl).  "
+        },
+        {
+            "name": "Mordenkainen",
+            "desc": "If the spell attack hits, deals 3d10 force damage. The sword can move.  "
+        },
+        {
+            "name": "Move Earth",
+            "desc": "Shape dirt, sand, or clay, but not stone (raise, lower, flatten, create a trench, etc) in a 40 ft square in 10 min.  "
+        },
+        {
+            "name": "Nondetection",
+            "desc": "Protect a creature or an object from any divination magic or magical scrying.  "
+        },
+        {
+            "name": "Nystul",
+            "desc": "Reveal false information about a creature or an object that would be the target of a divination spell.  "
+        },
+        {
+            "name": "Otiluke",
+            "desc": "Creatures in a 60 ft radius sphere must succeed on a Con. save or take 10d6 cold damage (damage/lvl).  "
+        },
+        {
+            "name": "Otiluke",
+            "desc": "The Large size or smaller target must succeedd on a Dex. save or be enclosed for the spell duration.  "
+        },
+        {
+            "name": "Otto",
+            "desc": "The target must succeed on a Wis. save or dance (disadvantage on Dex. save and attack rolls).  "
+        },
+        {
+            "name": "Pass without Trace",
+            "desc": "The caster and his allies within 30 ft get a +10 bonus to Dexterity (Discretion) checks and leave behind no tracks or traces.  "
+        },
+        {
+            "name": "Passwall",
+            "desc": "Open a 5 ft wide, 8 ft tall, 20 ft deep passage through stone, wood or plaster.  "
+        },
+        {
+            "name": "Phantasmal Force",
+            "desc": "Tha target must succeed on an Int. save or perceive as real an object or creature created by the caster (with sound).  "
+        },
+        {
+            "name": "Phantasmal Killer",
+            "desc": "The target must succeed on a Wis. save or be frightened then take 4d10 psychic damage (damage/lvl) on each of it's turn.  "
+        },
+        {
+            "name": "Phantom Steed",
+            "desc": "Create a quasi real Large horselike creature and everything to mount it.  "
+        },
+        {
+            "name": "Planar Ally",
+            "desc": "Summon a celestial, elemental, or fiend that will help the caster in exchange for payment (1000 gp/h, sacrifice, quest, etc).  "
+        },
+        {
+            "name": "Planar Binding",
+            "desc": "The target (celestial, elemental, fey, or fiend) must succeed on a Cha. save or serve the caster (duration/lvl).  "
+        },
+        {
+            "name": "Plane Shift",
+            "desc": "The caster and up to 8 creatures are transported to another plane of existence, or a creature is banished (Cha. save).  "
+        },
+        {
+            "name": "Plant Growth",
+            "desc": "Plants in the area grow vigorously, or over a year the plants produce twice the normal amount of food.  "
+        },
+        {
+            "name": "Poison Spray",
+            "desc": "The target must succeed on a Con. save or take 1d12 poison damage (damage/lvl).  "
+        },
+        {
+            "name": "Polymorph",
+            "desc": "Transform a target into a new beast form whose CR/level is equal to or less than the target's CR/level.  "
+        },
+        {
+            "name": "Power Word Heal",
+            "desc": "The target regains all its hp and charmed, frightened, paralyzed, and stunned conditions end.  "
+        },
+        {
+            "name": "Power Word Kill",
+            "desc": "The target (100 hp or fewer) dies!  "
+        },
+        {
+            "name": "Power Word Stun",
+            "desc": "The target (150 hp or fewer) is stunned until it succeeds on a Con. save.  "
+        },
+        {
+            "name": "Prayer of Healing",
+            "desc": "Up to 6 creatures regain 2d8+Ability.Mod (+1d8 hp/lvl).  "
+        },
+        {
+            "name": "Prestidigitation",
+            "desc": "Minor magical trick (sensory effect, light a torch, clean an object, warm, make a symbol appear, create a trinket, etc).  "
+        },
+        {
+            "name": "Prismatic Spray",
+            "desc": "Creatures in a 60 ft cone must succeed on a Dex. save or take 10d6 damage of a randomly determined type.  "
+        },
+        {
+            "name": "Prismatic Wall",
+            "desc": "Create a multi layered wall that inflicts different effects and damage depending on the layer.  "
+        },
+        {
+            "name": "Produce Flame",
+            "desc": "If the spell attack hits, deals 1d8 fire damage (damage/lvl). Shed bright light in 10 ft and dim light in additional 10 ft.  "
+        },
+        {
+            "name": "Programmed Illusion",
+            "desc": "Create the image of an animated object or creature, with sounds, for 5 min, with a triggering condition.  "
+        },
+        {
+            "name": "Project Image",
+            "desc": "Create a copy of the caster that mimics him, moves and emits sounds. The caster can see and hear through this double.  "
+        },
+        {
+            "name": "Protection from Energy",
+            "desc": "The target gains resistance to one damage type (acid, cold, fire, lightning, or thunder).  "
+        },
+        {
+            "name": "Protection from Evil and Good",
+            "desc": "The target is protected (disadvantage on attack rolls) against aberrations, celestials, elementals, fey, fiends, and undead.  "
+        },
+        {
+            "name": "Protection from Poison",
+            "desc": "Neutralize 1 poison in one creature, give advantage on saving throws againt being poisoned, and resistance to poison damage.  "
+        },
+        {
+            "name": "Purify Food and Drink",
+            "desc": "Purified and rendered free of poison and disease nonmagical food and drink in a 5 ft radius sphere.  "
+        },
+        {
+            "name": "Raise Dead",
+            "desc": "Take back to life (1 hp) a creature died for no longer than 10 days. Doesn't restore missing body parts.  "
+        },
+        {
+            "name": "Rary",
+            "desc": "Create a telepathic link between up to 8 people in a 30 ft radius for 1 hour.  "
+        },
+        {
+            "name": "Ray of Enfeeblement",
+            "desc": "If the spell attack hits, the target deals only half damage with a weapon attack that use Strength (Con. save).  "
+        },
+        {
+            "name": "Ray of Frost",
+            "desc": "If the spell attack hits, deals 1d8 cold damage (damage/lvl) and the target's speed is reduced by 10 ft.  "
+        },
+        {
+            "name": "Ray of Sickness",
+            "desc": "If the attack hits, deals 2d8 poison damage (damage/lvl) and the target can be poisoned (Con. save).  "
+        },
+        {
+            "name": "Regenerate",
+            "desc": "The target regains 4d8+15 hp then 1 hp per round and its severed members are restored.  "
+        },
+        {
+            "name": "Reincarnate",
+            "desc": "Reincarnate the soul of an humanoid died for no longer than 10 days. The race of the new body is determined at random.  "
+        },
+        {
+            "name": "Remove Curse",
+            "desc": "End all curses affecting one creature or object.  "
+        },
+        {
+            "name": "Resistance",
+            "desc": "The target can add 1d4 to one saving throw of its choice.  "
+        },
+        {
+            "name": "Resurrection",
+            "desc": "Take back to life (all hp) a creature died for no longer than 100 years (except of old age). Restore any missing body parts.  "
+        },
+        {
+            "name": "Reverse Gravity",
+            "desc": "Invert gravity in a 50 ft radius, 100 ft high cylinder.  "
+        },
+        {
+            "name": "Revivify",
+            "desc": "Take back to 1 hp a creature that has died within the last minute (except of old age).  "
+        },
+        {
+            "name": "Rope Trick",
+            "desc": "Vertically raise a rope that lead to an extradimensional space that can hold 8 Medium creatures.  "
+        },
+        {
+            "name": "Sacred Flame",
+            "desc": "The target must succeed on a Dex. save or take 1d8 radiant damage (damage/lvl).  "
+        },
+        {
+            "name": "Sanctuary",
+            "desc": "The protected creature forces a Wis. save to his aggressor in case of attack or offensive spell to no longer be the target.  "
+        },
+        {
+            "name": "Scorching Ray",
+            "desc": "If the spell attacks hit, 3 rays deal 2d6 fire damage each (+1 ray/lvl).  "
+        },
+        {
+            "name": "Scrying",
+            "desc": "Allow you to see and hear a specific creature (can also target a location) on the same plane (Wis. save).  "
+        },
+        {
+            "name": "Searing Smite",
+            "desc": "If the attack hits, deals an extra 1d6 fire damage and ignite the target (damage/lvl).  "
+        },
+        {
+            "name": "See Invisibility",
+            "desc": "The caster sees invisible creatures and objects, and into the Ethereal Plane.  "
+        },
+        {
+            "name": "Seeming",
+            "desc": "Change physical appearance as well as clothing and equipment of targets (saving throw for unwilling).  "
+        },
+        {
+            "name": "Sending",
+            "desc": "Send a 25 words message to a creature you are familiar with, regardless of the distance or the plan. It can answer it.  "
+        },
+        {
+            "name": "Sequester",
+            "desc": "Protect a willing creature (who becomes invisible and unconscious) or an object from divination spells.  "
+        },
+        {
+            "name": "Shapechange",
+            "desc": "The caster takes the form of a creature he has seen at least once with a CR equal to its level or lower.  "
+        },
+        {
+            "name": "Shatter",
+            "desc": "Creatures in a 10 ft radius sphere must succeed on a Con. save or take 3d8 thunder damage (damage/lvl).  "
+        },
+        {
+            "name": "Shield",
+            "desc": "In reaction, the caster gains a +5 bonus to AC and take no damage from the magic missile spell.  "
+        },
+        {
+            "name": "Shield of Faith",
+            "desc": "The target gets a +2 bonus to AC.  "
+        },
+        {
+            "name": "Shillelagh",
+            "desc": "Make magical a wooden weapon. Its damage become a d8 and the caster can use his spellcasting ability instead of Strength.  "
+        },
+        {
+            "name": "Shocking Grasp",
+            "desc": "If the spell attack hits, deals 1d8 lightning damage (damage/lvl) and the target can't take reactions.  "
+        },
+        {
+            "name": "Silence",
+            "desc": "Block all sounds within a 20 ft radius sphere.  "
+        },
+        {
+            "name": "Silent Image",
+            "desc": "Create the image of an object or a creature (without sound and no larger than a 15 ft cube) and lets it move.  "
+        },
+        {
+            "name": "Simulacrum",
+            "desc": "Create a duplicate of a beast or humanoid with the same abilities, half of the hp and without equipment.  "
+        },
+        {
+            "name": "Sleep",
+            "desc": "5d8 hp of creatures fall unconscious, starting with the creature with the lowest current hp (+2d8 hp/lvl).  "
+        },
+        {
+            "name": "Sleet Storm",
+            "desc": "Creatures in a 20 ft radius, 20 ft tall cylinder (heavily obscured) must succeed on a Dex. save or fall prone.  "
+        },
+        {
+            "name": "Slow",
+            "des": "Up to 6 targets must succeed on a Wis. save, or have their speed and actions reduced and -2 to CA and Dex. saves."
+        },
+        {
+            "name": "Spare the Dying",
+            "desc": "1 living creature with 0 hit points becomes stable.  "
+        },
+        {
+            "name": "Speak with Animals",
+            "desc": "The caster communicates with beats that can share information or help.  "
+        },
+        {
+            "name": "Speak with Dead",
+            "desc": "Allow a corpse that still has a mouth and is not an undead to answer 5 questions to the caster.  "
+        },
+        {
+            "name": "Speak with Plants",
+            "desc": "The caster can communicate with plants within 30 ft, and turns difficult terrain into ordinary terrain or vice versa.  "
+        },
+        {
+            "name": "Spider Climb",
+            "desc": "The target can move along vertical surfaces while leaving its hands free and gains climbing speed.  "
+        },
+        {
+            "name": "Spike Growth",
+            "desc": "Creatures in a 20 ft radius (difficult terrain) take 2d4 piercing damage for every 5 ft of movement.  "
+        },
+        {
+            "name": "Spirit Guardians",
+            "desc": "Targets in a 15 ft radius must succeed on a Wis. save or take 3d8 radiant or necrotic damage (damage/lvl).  "
+        },
+        {
+            "name": "Spiritual Weapon",
+            "desc": "If the spell attack hits, deals 1d8+Ability.Mod force damage (damage/lvl). A bonus action allows another attack.  "
+        },
+        {
+            "name": "Staggering Smite",
+            "desc": "If the attack hits, deals an extra 4d6 pyschic damage and the target must succeed on a Wis. save or have a disadvantage.  "
+        },
+        {
+            "name": "Stinking Cloud",
+            "desc": "Creatures in a 20 ft radius sphere must succeed on a Con. save or spend their action that turn retching and reeling.  "
+        },
+        {
+            "name": "Stone Shape",
+            "desc": "Give a stone no more than 5 ft in any dimension any shape, or create an opening in it.  "
+        },
+        {
+            "name": "Stoneskin",
+            "desc": "The target gets resistance to nonmagical bludgeoning, piercing, and slashing damage.  "
+        },
+        {
+            "name": "Storm of Vengeance",
+            "desc": "Creatures in a 360 ft radius must succeed on a Con. save or be deafened and suffer various damage and effects.  "
+        },
+        {
+            "name": "Suggestion",
+            "desc": "The target must succeed on a Wis. save or follow the suggestion given by the caster in one or two sentences.  "
+        },
+        {
+            "name": "Sunbeam",
+            "desc": "Creatures on a 5 ft wide, 60 ft long line must succeed on a Con. save or take 6d8 radiant damage and be blinded.  "
+        },
+        {
+            "name": "Sunburst",
+            "desc": "Creatures in a 60 ft radius must succeed on a Con. save or take 12d6 radiant damage and be blinded for 1 min.  "
+        },
+        {
+            "name": "Swift Quiver",
+            "desc": "Make a quiver to produce an endless supply of nonmagical ammunition, allowing 2 attacks per round with a bonus action.  "
+        },
+        {
+            "name": "Symbol",
+            "desc": "Set the trigger and the effect of a glyph on an object (death, discord, fear, hopelessness, insanity, pain, sleep, etc).  "
+        },
+        {
+            "name": "Tasha",
+            "desc": "The target must succeed on a Wis. save or falls into fits of laughter, fall prone and becoming incapacitated.  "
+        },
+        {
+            "name": "Telekinesis",
+            "desc": "Move a creature (Huge or smaller) or object (up to 1,000 pounds) by thought in case of successful contest.  "
+        },
+        {
+            "name": "Telepathy",
+            "desc": "Comunicate via telepathy with a known and willing creature on the same plane of existence.  "
+        },
+        {
+            "name": "Teleport",
+            "desc": "The caster and 8 creatures are teleported anywhere on the same plane. Risk of failure depending on the destination familiarity.  "
+        },
+        {
+            "name": "Teleportation Circle",
+            "desc": "Create a circle that allows anyone to be teleported to another teleportation circle known to the caster.  "
+        },
+        {
+            "name": "Tenser",
+            "desc": "Create a floating 3 ft diameter disk that can support up to 500 pounds and follows the caster.  "
+        },
+        {
+            "name": "Thaumaturgy",
+            "desc": "Create various minor effects to impress or distract creatures.  "
+        },
+        {
+            "name": "Thorn Whip",
+            "desc": "If the attack hits, deals 1d6 piercing damage and pull the target (Larger or smaller) up to 10 ft (damage/lvl).  "
+        },
+        {
+            "name": "Thunderous Smite",
+            "desc": "If the attack hits, deals an extra 2d6 thunder damage, and target must succeed on a Str. save or be pushed and knocked prone.  "
+        },
+        {
+            "name": "Thunderwave",
+            "desc": "Creatures in a 15 ft cube must succeed on a Con. save or take 2d8 thunder damage (damage/lvl).  "
+        },
+        {
+            "name": "Time Stop",
+            "desc": "Stop the time during 1d4+1 turns for everyone except for the caster.  "
+        },
+        {
+            "name": "Tongues",
+            "desc": "The target understands and speaks any spoken language it hears.  "
+        },
+        {
+            "name": "Transport via Plants",
+            "desc": "The caster can move from one plant to another plant (Large or larger) using 5 ft.  "
+        },
+        {
+            "name": "Tree Stride",
+            "desc": "The caster can move from one tree to another tree of the same kind (500 ft max between both) using 5 ft.  "
+        },
+        {
+            "name": "True Polymorph",
+            "desc": "Transform a creature or object into a new form (creature &lt; &gt; object) of FP/level at most equal to the FP/level of the crea  "
+        },
+        {
+            "name": "True Resurrection",
+            "desc": "Take back to life (all hp) a creature died for no longer than 200 years (except of old age), even without the original body.  "
+        },
+        {
+            "name": "True Seeing",
+            "desc": "The target gets truesight, sees magic secret doors and in the Ethereal Plane.  "
+        },
+        {
+            "name": "True Strike",
+            "desc": "The caster gains advantage on his first attack roll against a target.  "
+        },
+        {
+            "name": "Tsunami",
+            "desc": "Creatures in a 300 ft long, 300 ft high, 50 ft thick area must succeed on a Str. save or take 6d10 bludgeoning damage.  "
+        },
+        {
+            "name": "Unseen Servant",
+            "desc": "Create an invisible servant who performs simple tasks (bring something back, clean up, maintain a fire, serve at table, etc).  "
+        },
+        {
+            "name": "Vampiric Touch",
+            "desc": "If the spell attack hits, deals 3d6 necrotic damage (damage/lvl) and the caster regains 50% of his hp.  "
+        },
+        {
+            "name": "Vicious Mockery",
+            "desc": "The target must succeed on a Wis. save or take 1d4 psychic damage and have disadvantage on its attack roll (damage/lvl).  "
+        },
+        {
+            "name": "Wall of Fire",
+            "desc": "Create a 60 x 20 x 1 ft wall of fire. Creatures inside or within 10ft of one side of the wall take 5d8 fire damage (damage/lvl).  "
+        },
+        {
+            "name": "Wall of Force",
+            "desc": "Create a physically insurmountable wall of force (ten 10 ft panels) immune to all types of damage.  "
+        },
+        {
+            "name": "Wall of Ice",
+            "desc": "Create a wall of ice (ten 10 ft panels) that can be damaged and can inflict 5d6 cold damage if passed through (damage/lvl).  "
+        },
+        {
+            "name": "Wall of Stone",
+            "desc": "Create a nonmagical wall of stone (ten 10 ft panels) that can be damaged.  "
+        },
+        {
+            "name": "Wall of Thorns",
+            "desc": "Create an 60 ft long, 10 ft high, 5 ft thick wall of brush that slows movement and can inflict 7d8 piercing damage (damage/lvl).  "
+        },
+        {
+            "name": "Warding Bond",
+            "desc": "The target gains +1 on AC, +1 on saving throws and resistance to all damage, but the caster shares damage.  "
+        },
+        {
+            "name": "Water Breathing",
+            "desc": "Up to 10 creatures gets the ability to breathe underwater.  "
+        },
+        {
+            "name": "Water Walk",
+            "desc": "Up to 10 creatures can move on a liquid surface (water, acid, mud, lava, etc) as if it were harmless solid ground.  "
+        },
+        {
+            "name": "Web",
+            "desc": "Create a 20 ft cube filled by thick, sticky webs (difficult terrain) that can restrain creature (Dex. save).  "
+        },
+        {
+            "name": "Weird",
+            "desc": "Creatures in a 30 ft radius sphere must succeed on a Wis. save or be frightened and take 4d10 psychic damage each turn.  "
+        },
+        {
+            "name": "Wind Walk",
+            "desc": "The caster and up to 10 creatures assume gaseous form (flying speed of 300 ft and resistance to damage from nonmagical weapon).  "
+        },
+        {
+            "name": "Wind Wall",
+            "desc": "Create a 50 ft long, 15 ft high, 1 ft thick wall of wind. Small flying creatures can't pass. Arrows and bolts are deflected.  "
+        },
+        {
+            "name": "Wish",
+            "desc": "Duplicate a 8th level spell or lower without components, or create another effect at the MD discretion.  "
+        },
+        {
+            "name": "Witch Bolt",
+            "desc": "If the spell attack hits, deals 1d12 lightning damage (damage/lvl) on each round.  "
+        },
+        {
+            "name": "Word of Recall",
+            "desc": "The caster and up to 5 other creatures are teleported to a previously designated sanctuary.  "
+        },
+        {
+            "name": "Wrathful Smite",
+            "desc": "If the attack hits, deals an extra 1d6 psychic damage and the target must succeed on a Wis. save or be frightened.  "
+        },
+        {
+            "name": "Zone of Truth",
+            "desc": "Creatures within a 15 ft radius sphere must succeed on a Cha. save or can not lie.  "
+        }
+    ]
+}

@@ -5,10 +5,8 @@ export const prerender = true;
 import type { PageLoad } from './$types';
 import * as dndApi from '$lib/services/dnd5eApi/api';
 
-export const load: PageLoad = async ({ params }) => {
-	const instance = new dndApi.SpellsApi({});
-	const spell = await instance.apiSpellsIndexGet(params.id);
-	return {
-		spell
-	};
+export const load: PageLoad = async ({ params, fetch }) => {
+  return {
+    spell
+  };
 };

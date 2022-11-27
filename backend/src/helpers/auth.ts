@@ -32,6 +32,7 @@ export const checkValidUser = async (
   reply: FastifyReply,
   done,
 ) => {
+  done()
   try {
     let token = request.headers.authorization
     token = token.replace('Bearer ', '')
@@ -46,13 +47,13 @@ export const checkValidUser = async (
       return reply.code(ERROR401.statusCode).send(ERROR401)
     }
 
-    const userData = await prisma.user.findUnique({ where: { id: user.id } })
+    const userData = false //await prisma.user.findUnique({ where: { id: user.id } })
 
     if (!userData) {
       return reply.code(ERROR401.statusCode).send(ERROR401)
     }
     request.authUser = userData
-    done();
+    done()
   } catch (e) {
     return reply.code(ERROR401.statusCode).send(e)
   }

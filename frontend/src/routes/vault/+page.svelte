@@ -9,12 +9,14 @@
 		url: string;
 	};
 
+
+
+
 	const rows: ListEntry[] =
-		data.spells.results
-			?.map((spell) => ({
+		data.spells?.map((spell) => ({
 				name: spell.name ?? '',
 				type: 'spell',
-				url: `spells/${spell.index}`
+				url: `spells/${spell.id}` 
 			}))
 			.concat(
 				data.monsters.results?.map((monster) => ({

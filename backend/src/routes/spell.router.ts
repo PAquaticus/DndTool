@@ -1,18 +1,20 @@
 import { FastifyInstance } from 'fastify'
-import { createPostSchema } from '../schema'
 import * as controllers from '../controllers'
 import { checkValidRequest, checkValidUser } from '../helpers/auth'
-import { getSpellSchema } from 'schema/spell.schema'
+import { getSpellSchema } from '../schema'
 
-async function postRouter(fastify: FastifyInstance) {
+async function spellRouter(fastify: FastifyInstance) {
   fastify.decorateRequest('authUser', '')
   fastify.route({
     method: 'GET',
-    url: '/',
-    schema: getSpellSchema,
-    preHandler: [checkValidRequest, checkValidUser],
+    url: '/:spellId',
     handler: controllers.getSpell,
+  })
+  fastify.route({
+    method: 'GET',
+    url: '/',
+    handler: controllers.getAllSpells,
   })
 }
 
-export default postRouter
+export default spellRouter

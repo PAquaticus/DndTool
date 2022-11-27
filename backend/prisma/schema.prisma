@@ -1,3 +1,6 @@
+// This is your Prisma schema file, 
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -7,25 +10,58 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Character {
+  id                 String           @id @default(auto()) @map("_id") @db.ObjectId
+  name               String
+  portraitUrl        String?
+  cr                 Int?
+  hitPointRoll       String?
+  ac                 Int?
+  initiativeModifier Int?
+  Speed              Int?
+  actions            Action[]
+  specialAbilities   SpecialAbility[]
+  spells             Spell[]
+  Encounter          Encounter?       @relation(fields: [encounterId], references: [id])
+  encounterId        String?          @db.ObjectId
+}
+
 model Spell {
-  id                     String   @id @default(auto()) @map("_id") @db.ObjectId
-  /// Could not determine type: the field only had null or empty values in the sample set.
-  castingTime            Json?
-  /// Could not determine type: the field only had null or empty values in the sample set.
-  category               Json?
-  /// Could not determine type: the field only had null or empty values in the sample set.
-  characterId            Json?
-  components             String[]
+  id                     String     @id @default(auto()) @map("_id") @db.ObjectId
+  name                   String     @unique
   description            String
-  duration               String
-  /// Could not determine type: the field only had null or empty values in the sample set.
-  higherLevelDescription Json?
-  level                  BigInt
-  material               String?
-  /// Could not determine type: the field only had null or empty values in the sample set.
-  multipliciy            Json?
-  name                   String
-  range                  String
-  ritual                 Boolean
   shortDescription       String?
+  category               String?
+  multipliciy            Int?
+  higherLevelDescription String?
+  range                  String?
+  components             String[]
+  material               String?
+  ritual                 Boolean?
+  duration               String?
+  castingTime            String?
+  level                  Int?
+  Character              Character? @relation(fields: [characterId], references: [id])
+  characterId            String?    @db.ObjectId
+}
+
+model SpecialAbility {
+  id          String     @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  description String[]
+  Character   Character? @relation(fields: [characterId], references: [id])
+  characterId String?    @db.ObjectId
+}
+
+model Action {
+  id          String     @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  description String[]
+  Character   Character? @relation(fields: [characterId], references: [id])
+  characterId String?    @db.ObjectId
+}
+
+model Encounter {
+  id         String      @id @default(auto()) @map("_id") @db.ObjectId
+  characters Character[]
 }

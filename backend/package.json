@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/hmake98/fastify-typescript#readme",
   "dependencies": {
-    "@fastify/swagger": "^8.2.0",
     "@prisma/client": "^3.12.0",
     "@types/bcryptjs": "^2.4.2",
     "aws-sdk": "^2.1116.0",

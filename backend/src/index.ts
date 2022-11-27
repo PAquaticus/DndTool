@@ -12,7 +12,9 @@ const startServer = async () => {
       logger: pino({ level: 'info' }),
     })
     server.register(require('fastify-formbody'))
-    server.register(require('fastify-cors'))
+    server.register(require('fastify-cors'), {
+      origin: ['http://localhost:5173'],
+    })
     server.register(require('fastify-helmet'))
     server.register(spellRouter, { prefix: '/api/spell' })
     server.setErrorHandler((error, request, reply) => {

@@ -9,9 +9,6 @@
 		url: string;
 	};
 
-
-
-
 	const rows: ListEntry[] =
 		data.spells?.map((spell) => ({
 				name: spell.name ?? '',

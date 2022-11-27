@@ -8,6 +8,8 @@ async function spellRouter(fastify: FastifyInstance) {
   fastify.route({
     method: 'GET',
     url: '/:spellId',
+    schema: getSpellSchema,
+    preHandler: [],
     handler: controllers.getSpell,
   })
   fastify.route({

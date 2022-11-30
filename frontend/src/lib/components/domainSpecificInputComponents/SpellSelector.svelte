@@ -9,22 +9,24 @@
   import TextInput from '../genericInputComponents/TextInput.svelte';
   import PrismaClient from '$lib/services/clients/prismaClient';
   import type { Spell } from '@prisma/client';
+    import { BackendClient } from '$lib/services/backendClient/client';
   export let value: string | undefined;
   export let id: string;
   export let label: string;
   export let tailwindClass: string | undefined = undefined;
   export let placeholder: string | undefined = undefined;
 
-  let response: APIReferenceList | undefined;
+  let response: Spell[] | undefined;
   let selectedSpell: string | undefined;
   let selectedSpellMultiplicity: number | undefined;
   let spell: Spell | null = null;
 
   let entries: Spell[] = [];
 
-  onMount(async () => {
-    const instance = new dndApi.SpellsApi({});
-    response = await instance.apiSpellsGet();
+  onMount(async () => { 
+    const spellsResponse = await BackendClient.getAllSpells(fetch);
+    const { data: spells } = await spellsResponse.json();
+    response = spells
   });
 
   $: onClick = () => {
@@ -44,14 +46,8 @@
   };
 
   const loadSpell = async (spellIndex: string) => {
-    const prisma = new PrismaClient();
-    await prisma.$connect();
-    const spell: Spell | null = await prisma.spell.findFirst({
-      where: {
-        name: spellIndex
-      }
-    });
-    return spell;
+    const spellResponse = await BackendClient.getSpell(fetch, spellIndex);
+    return spellResponse.json();
   };
 </script>
 
@@ -66,11 +62,12 @@
         if (selectedSpell === undefined) {
           return;
         }
-        spell = await loadSpell(selectedSpell);
+        const {data} = await loadSpell(selectedSpell);
+        spell = data;
       }}>
       <option value={undefined} />
-      {#each response?.results ?? [] as effect}
-        <option value={effect.index}>{effect.name}</option>
+      {#each response ?? [] as effect}
+        <option value={effect.id}>{effect.name}</option>
       {/each}
     </select>
   </FormItem>

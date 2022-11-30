@@ -3,7 +3,9 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	const { spell } = data;
+	const { spell } = data; 
+
+
 </script>
 
 <section class="px-16 py-8 flex flex-row justify-center">
@@ -15,8 +17,13 @@
 					<input type="text" id="Name" bind:value={spell.name} minlength="2" required />
 				</EditorRowInput>
 
+
+				<EditorRowInput name="Name">
+					<input type="text" id="Name" bind:value={spell.shortDescription} minlength="2" required />
+				</EditorRowInput>
+
 				<EditorRowInput name="Description">
-					<textarea class="h-64" id="description" bind:value={spell.desc} minlength="2" required />
+					<textarea class="h-64" id="description" bind:value={spell.description} minlength="2" required />
 				</EditorRowInput>
 			</div>
 

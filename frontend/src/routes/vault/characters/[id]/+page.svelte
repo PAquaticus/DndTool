@@ -9,23 +9,22 @@
     import FormItem from '$lib/components/genericInputComponents/FormItem.svelte';
     import Icon from '@iconify/svelte';
     import Table from '$lib/components/genericInputComponents/Table.svelte';
+    import type { Action, SpecialAbility } from '@prisma/client';
 
   const character: any = {};
 
-  type Action = {name: string | undefined, description: string | undefined};
-  const newAction: Action = {
+  const newAction: Partial<Action> = {
     name: undefined,
     description: undefined
   }
   let actions: Action[] = [];
 
 
-  type Ability = {name: string | undefined, description: string | undefined}
-  const newAbility:  Ability = {
+  const newAbility:  Partial<SpecialAbility> = {
     name: undefined,
     description: undefined
   }
-  let abilities: Ability[] = []
+  let abilities:SpecialAbility [] = []
 
   const formRowTailwindClass = 'w-full my-4';
 </script>

@@ -48,7 +48,7 @@ model Spell {
 model SpecialAbility {
   id          String     @id @default(auto()) @map("_id") @db.ObjectId
   name        String
-  description String[]
+  description String
   Character   Character? @relation(fields: [characterId], references: [id])
   characterId String?    @db.ObjectId
 }
@@ -56,7 +56,7 @@ model SpecialAbility {
 model Action {
   id          String     @id @default(auto()) @map("_id") @db.ObjectId
   name        String
-  description String[]
+  description String
   Character   Character? @relation(fields: [characterId], references: [id])
   characterId String?    @db.ObjectId
 }

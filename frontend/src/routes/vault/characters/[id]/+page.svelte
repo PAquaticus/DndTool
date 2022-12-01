@@ -6,8 +6,26 @@
   import DamageTypeRow from '../components/DamageTypeRow.svelte';
   import DiceAverageDisplay from '$lib/components/domainSpecificInputComponents/DiceAverageDisplay.svelte';
   import SpellSelector from '$lib/components/domainSpecificInputComponents/SpellSelector.svelte';
+    import FormItem from '$lib/components/genericInputComponents/FormItem.svelte';
+    import Icon from '@iconify/svelte';
+    import Table from '$lib/components/genericInputComponents/Table.svelte';
 
   const character: any = {};
+
+  type Action = {name: string | undefined, description: string | undefined};
+  const newAction: Action = {
+    name: undefined,
+    description: undefined
+  }
+  let actions: Action[] = [];
+
+
+  type Ability = {name: string | undefined, description: string | undefined}
+  const newAbility:  Ability = {
+    name: undefined,
+    description: undefined
+  }
+  let abilities: Ability[] = []
 
   const formRowTailwindClass = 'w-full my-4';
 </script>
@@ -72,9 +90,73 @@
 
         <h2>Special Abilities</h2>
 
+
+
+        <FormRow tailwindClass={formRowTailwindClass}>
+          <TextInput
+            tailwindClass="mr-4 w-full"
+            id="specialAbilityName"
+            label="Ability Name"
+            placeholder="Multi attack"
+            value={newAbility.name} />
+        </FormRow>
+
+
+        <FormRow >
+          <FormItem id="specialAbilityDescription" label="Description" tailwindClass="mr-4 w-full">
+              <textarea value={newAbility.description ?? ''} class="h-16" placeholder="Makes two greatsword attacks or two slam attacks."  />
+           </FormItem>
+        </FormRow>
+
+        <FormRow tailwindClass="mb-8">
+          <button class="btn btn-base bg-surface-500 text-surface-100" on:click={() => {}}
+            ><Icon class="text-xl" icon="ic:baseline-plus" />Add Ability</button>
+        </FormRow>
+
+      <Table
+        data={abilities}
+        columns={[
+          {
+            headerName: 'Ability Name',
+            tailwindClass: 'w-4/5 data-column',
+            valueFormatter: (data) => data.name ?? ''
+          } 
+        ]} />
+
         <h2>Actions</h2>
 
-        table
+        <FormRow tailwindClass={formRowTailwindClass}>
+          <TextInput
+            tailwindClass="mr-4 w-full"
+            id="actionName"
+            label="Action Name"
+            placeholder="Dagger"
+            value={newAction.name} />
+        </FormRow>
+
+
+        <FormRow >
+          <FormItem id="actionDescription" label="Description" tailwindClass="mr-4 w-full">
+              <textarea class="h-16" placeholder="Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage." value={newAction.description ?? ''} />
+           </FormItem>
+        </FormRow>
+
+        <FormRow tailwindClass="mb-8">
+          <button class="btn btn-base bg-surface-500 text-surface-100" on:click={() => {}}
+            ><Icon class="text-xl" icon="ic:baseline-plus" />Add Action</button>
+        </FormRow>
+
+
+      <Table
+        data={actions}
+        columns={[
+          {
+            headerName: 'Action Name',
+            tailwindClass: 'w-4/5 data-column',
+            valueFormatter: (data) => data.name ?? ''
+          } 
+        ]} />
+
 
         <h2>Spells</h2>
         <FormRow tailwindClass={formRowTailwindClass}>

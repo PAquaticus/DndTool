@@ -1,15 +1,12 @@
 <script lang="ts">
-  import type { APIReferenceList } from '$lib/services/dnd5eApi/api';
-  import * as dndApi from '$lib/services/dnd5eApi/api';
-  import { onMount } from 'svelte';
+  import { BackendClient } from '$lib/services/backendClient/client';
   import Icon from '@iconify/svelte';
+  import type { Spell } from '@prisma/client';
+  import { onMount } from 'svelte';
   import FormItem from '../genericInputComponents/FormItem.svelte';
-  import FormRow from '../layout/FormRow.svelte';
   import Table from '../genericInputComponents/Table.svelte';
   import TextInput from '../genericInputComponents/TextInput.svelte';
-  import PrismaClient from '$lib/services/clients/prismaClient';
-  import type { Spell } from '@prisma/client';
-    import { BackendClient } from '$lib/services/backendClient/client';
+  import FormRow from '../layout/FormRow.svelte';
   export let value: string | undefined;
   export let id: string;
   export let label: string;
@@ -29,16 +26,14 @@
     response = spells
   });
 
-  $: onClick = () => {
+  $: onClick =async () => {
     if (selectedSpell === undefined) {
       return;
     }
-    loadSpell(selectedSpell).then((res) => {
-      if (res === null) {
-        return;
-      }
-      entries = entries.concat(res);
-    });
+    const {data: loadedSpell} = await loadSpell(selectedSpell) 
+    entries = entries.concat(loadedSpell)
+
+    
     selectedSpell = undefined;
     selectedSpellMultiplicity = undefined;
     spell = null;
@@ -101,7 +96,7 @@
 
 <FormRow tailwindClass="mb-8">
   <button class="btn btn-base bg-surface-500 text-surface-100" on:click={onClick}
-    ><Icon class="text-xl" icon="ic:baseline-plus" /> Add Spell</button>
+    ><Icon class="text-xl" icon="ic:baseline-plus" />Add Spell</button>
 </FormRow>
 
 <Table

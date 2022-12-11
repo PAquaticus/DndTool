@@ -18,9 +18,10 @@
   <table class="w-full border-solid border-black ">
     <tr>
       {#each columns as col}
-        <th align="left" class={col.tailwindClass}>{col.headerName}</th>
+        <th align="left" class={`bg-surface-200 dark:bg-surface-800 ${col.tailwindClass}`}
+          >{col.headerName}</th>
       {/each}
-      <th align="left" class="w-1/5" />
+      <th align="left" class="bg-surface-200 dark:bg-surface-800 w-1/5" />
     </tr>
     {#each data as entry, idx}
       <tr>
@@ -33,7 +34,6 @@
             ><Icon class="text-xl" icon="mdi:trash" />
           </button></td>
       </tr>
-
     {/each}
   </table>
 </div>
@@ -44,7 +44,6 @@
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 1rem;
-    background-color: rgb(var(--color-surface-200));
     border-bottom: 1px rgb(var(--color-surface-300)) solid;
   }
 

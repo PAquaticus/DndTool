@@ -49,6 +49,7 @@ model SpecialAbility {
   id          String     @id @default(auto()) @map("_id") @db.ObjectId
   name        String
   description String[]
+  origin      String
   Character   Character? @relation(fields: [characterId], references: [id])
   characterId String?    @db.ObjectId
 }

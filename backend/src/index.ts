@@ -3,6 +3,8 @@ import fastify from 'fastify'
 import pino from 'pino'
 import loadConfig from './config'
 import spellRouter from './routes/spell.router'
+import characterRouter from './routes/character.router'
+import specialAbilityRouter from './routes/specialAbility.router'
 loadConfig()
 
 const port = process.env.API_PORT || 5000
@@ -17,6 +19,8 @@ const startServer = async () => {
     })
     server.register(require('fastify-helmet'))
     server.register(spellRouter, { prefix: '/api/spell' })
+    server.register(characterRouter, { prefix: '/api/character' })
+    server.register(specialAbilityRouter, { prefix: '/api/specialAbility' })
     server.setErrorHandler((error, request, reply) => {
       server.log.error(error)
     })

@@ -31,9 +31,9 @@
 
 <section class="px-16 py-8 flex flex-row justify-center">
   <div>
-    <h1>Character Editor</h1>
+    <h1>Character Editor</h1> 
     <div class="flex flex-row">
-      <div class="flex flex-col mr-4">
+      <div class="flex flex-col mr-4"> 
         <h2>Stats</h2>
         <FormRow tailwindClass={formRowTailwindClass}>
           <TextInput tailwindClass="w-80 mr-8" id={'name'} label="Name" value={character.name} />

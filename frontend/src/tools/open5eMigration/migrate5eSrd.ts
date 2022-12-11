@@ -1,8 +1,12 @@
 import type * as dndApi from '../../lib/services/dnd5eApi/api';
-import { PrismaClient, type Spell } from '@prisma/client';
+import { PrismaClient, type SpecialAbility, type Spell } from '@prisma/client';
 import spellShortDescriptions from '../open5eMigration/spellsShortDescription.json' assert { type: 'json' };
+import type { Monster } from '../../lib/services/dnd5eApi';
 
 type NewSpell = Omit<Spell, 'id'>;
+
+const monsterURL =
+  'https://raw.githubusercontent.com/5e-bits/5e-database/main/src/5e-SRD-Monsters.json';
 
 export function mapSpell(sourceSpell: dndApi.Spell): NewSpell {
   if (sourceSpell.name === undefined || !Array.isArray(sourceSpell.desc)) {
@@ -28,6 +32,7 @@ export function mapSpell(sourceSpell: dndApi.Spell): NewSpell {
 }
 
 const prisma = new PrismaClient();
+
 async function migrate5eSrdContent(prisma: PrismaClient) {
   const prismaConnectResponse = prisma.$connect();
   console.log('totally connected');
@@ -54,4 +59,27 @@ async function migrate5eSrdContent(prisma: PrismaClient) {
 
   console.log('disconneting');
 }
-migrate5eSrdContent(prisma);
+
+//migrate5eSrdContent(prisma);
+
+async function migrateMonsters() {
+  const response = await fetch(monsterURL);
+  const monsters: Monster[] = await response.json();
+  const specialAbilities: any[] = monsters
+    .map((monster) => {
+      return (monster as unknown as any)['special_abilities']?.map(
+        (ability: any) =>
+          ({
+            name: ability.name,
+            description: ability.desc,
+            origin: monster.name
+          } as unknown)
+      );
+    })
+    .flat();
+
+  await prisma.specialAbility.deleteMany();
+  await prisma.specialAbility.createMany({ data: specialAbilities });
+}
+
+migrateMonsters();
